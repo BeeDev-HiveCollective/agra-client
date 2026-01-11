@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+}
+
+.hero-left {
+    flex-direction: row;
+    padding: 1rem;
+
+    h1 {
+        padding: 1rem;
+    }
+
+    h5 {
+        padding: 1rem;
+    }
+
+    button {
+        margin: 1rem;
+    }
+}
+
+.hero-right img {
+    height: 25rem;
+}

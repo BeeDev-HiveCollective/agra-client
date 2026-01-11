@@ -217,3 +217,13 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
 }
+
+.primary-button {
+  background-color: var(--primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.secondary-button {
+  background-color: var(--dark-gray);
+  font-family: 'Inter', sans-serif;
+}
