@@ -5,6 +5,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="nav-brand">
         <Link to="/">AG Reese & Associates, P.C.</Link>
+        <h5 className='slogan'>Integrity at its best</h5>
       </div>
       <div className="nav-links">
         <Link to="/">Home</Link>

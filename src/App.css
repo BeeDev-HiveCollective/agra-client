@@ -127,6 +127,10 @@ a {
   min-height: 80px;
 }
 
+.slogan { 
+  color: var(--white);
+}
+
 .nav-brand a {
   color: var(--white);
   text-decoration: none;
@@ -177,7 +181,6 @@ a {
     font-size: 0.9rem;
   }
 }
-
 /*                       */
 /* END NAVIGATION STYLES */
 /*                       */
