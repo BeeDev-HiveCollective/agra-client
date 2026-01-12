@@ -18,4 +18,10 @@
 
 .member_badges {
     text-align: center;
+    padding: 0.5rem 1rem;
+
+    #badge_link_text {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
 }
