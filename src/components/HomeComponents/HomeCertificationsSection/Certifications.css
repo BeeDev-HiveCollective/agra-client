@@ -11,10 +11,11 @@
     padding: 1rem;
 
     img {
-        height: 6rem;
+        height: 4rem;
+        margin: 0 1rem;
     }
 }
 
-h5 {
+.member_badges {
     text-align: center;
 }

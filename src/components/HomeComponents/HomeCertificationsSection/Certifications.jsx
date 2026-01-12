@@ -2,6 +2,7 @@ import "./Certifications.css";
 import Vscpa from "../../../assets/VSCPA_badge_green.png";
 import Aicpa from "../../../assets/AICPA_badge_green.png";
 import Swam from "../../../assets/SWaM_badge_green.png";
+import Naba from "../../../assets/NABA_badge_green.png";
 
 import { Link } from "react-router-dom";
 
@@ -14,12 +15,15 @@ export default function HeroSection() {
                 </Link>
                 <Link to="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">
                     <img src= { Aicpa } alt="American Institute of Certified Public Accountants Member Badge" />
+                <Link to="https://nabainc.org/" target="_blank" rel="noopener noreferrer">
+                    <img src= { Naba } alt="National Association of Black Accountants Member Badge" />
                 </Link>
+                    </Link>
                 <Link to="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">
                     <img src= { Swam } alt="Small, Women-owned, and Minority-owned Business (SWaM) Member Badge" />
                 </Link>
             </div>
-            <h5>Proud member of: Virginia Society of CPAs | American Institute of Certified Public Accountants (AICPA) | Small, Women and Minority Owned (SWaM)</h5>
+            <h5 className="member_badges">Proud member of: Virginia Society of CPAs | American Institute of Certified Public Accountants (AICPA) | National Association of Black Accountants | Small, Women and Minority Owned (SWaM)</h5>
         </div>
     )
 }
