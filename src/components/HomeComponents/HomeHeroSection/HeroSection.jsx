@@ -1,6 +1,6 @@
 import "./HeroSection.css";
 import { Link } from "react-router-dom";
-import HeroImage from "../../../../../assets/hero_section_image.jpg";
+import HeroImage from "../../../assets/hero_section_image.jpg";
 
 
 

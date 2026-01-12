@@ -1,0 +1,20 @@
+.certifications {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+
+    img {
+        height: 6rem;
+    }
+}
+
+h5 {
+    text-align: center;
+}
