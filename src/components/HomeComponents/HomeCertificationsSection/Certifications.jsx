@@ -6,7 +6,7 @@ import Naba from "../../../assets/NABA_badge_green.png";
 
 import { Link } from "react-router-dom";
 
-export default function HeroSection() {
+export default function CertificationsSection() {
     return (
         <div className="certifications">
             <div className="badges">
