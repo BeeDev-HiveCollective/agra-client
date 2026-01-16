@@ -23,7 +23,7 @@ export default function CertificationsSection() {
                     <img src= { Swam } alt="Small, Women-owned, and Minority-owned Business (SWaM) Member Badge" />
                 </Link>
             </div>
-            <h5 className="member_badges">Proud member of: <a id="badge_link_text" href="https://www.vscpa.com/" target="_blank" rel="noopener noreferrer">Virginia Society of CPAs</a> | <a id="badge_link_text" href="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">American Institute of Certified Public Accountants (AICPA)</a> | <a id="badge_link_text" href="https://nabainc.org/" target="_blank" rel="noopener noreferrer">National Association of Black Accountants</a> | <a id="badge_link_text" href="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">Small, Women and Minority Owned (SWaM)</a></h5>
+            <h5 className="member_badges">Proud member of: <a id="badge_link_text" href="https://www.vscpa.com/" target="_blank" rel="noopener noreferrer">Virginia Society of CPAs</a> | <a id="badge_link_text" href="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">American Institute of Certified Public Accountants (AICPA)</a> | <a id="badge_link_text" href="https://nabainc.org/" target="_blank" rel="noopener noreferrer">National Association of Black Accountants</a> | <a id="badge_link_text" href="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">Small, Women, and Minority Owned (SWaM)</a></h5>
         </div>
     )
 }

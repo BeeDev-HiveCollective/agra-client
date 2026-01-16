@@ -1,0 +1,63 @@
+import Vscpa from "../assets/VSCPA_badge_white.png";
+import Aicpa from "../assets/AICPA_badge_white.png";
+import Swam from "../assets/SWaM_badge_white.png";
+import Naba from "../assets/NABA_badge_white.png";
+
+import { Link } from "react-router-dom";
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="top">
+                <div className="left">
+                    <div className="name">
+                        <Link to="/">
+                            <h3>A.G. Reese & Associates, P.C.</h3>
+                            <h5>Certified Public Accountants</h5>
+                        </Link>
+                    </div>
+                    <div className="badges">
+                        <Link to="https://www.vscpa.com/" target="_blank" rel="noopener noreferrer">
+                            <img src= { Vscpa } alt="Virginia Society of Certified Public Accountants Member Badge" />
+                        </Link>
+                        <Link to="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">
+                            <img src= { Aicpa } alt="American Institute of Certified Public Accountants Member Badge" />
+                        <Link to="https://nabainc.org/" target="_blank" rel="noopener noreferrer">
+                            <img src= { Naba } alt="National Association of Black Accountants Member Badge" />
+                        </Link>
+                            </Link>
+                        <Link to="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">
+                            <img src= { Swam } alt="Small, Women-owned, and Minority-owned Business (SWaM) Member Badge" />
+                        </Link>
+                    </div>
+                </div>
+                <div className="right">
+                    <div className="footer-links">
+                        <h3>Quick Links</h3>
+                        <h5><a id="footer-link" href="/about">About Us</a></h5>
+                        <h5><a id="footer-link" href="/services">Services</a></h5>
+                        <h5><a id="footer-link" href="/resources">Resources</a></h5>
+                        <h5><a id="footer-link" href="/contact">Contact Us</a></h5>
+                    </div>
+                    <div className="office-info">
+                        <h3><address>Office Info</address></h3>
+                        <h5><address>123 Main Street, Suite 200</address></h5>
+                        <h5>Richmond, Virginia 23219</h5>
+                        <h5>Phone: (123) 456-7890</h5>
+                        <h5>Email: info@agreese.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="bottom">
+                <div className="site-links">
+                    <h5>Terms & Conditions | Privacy Policy | Unsubscribe</h5>
+                </div>
+                <div className="created-by-info">
+                    <h5>Website created by <a id="footer-link" href="https://www.beedev-services.com/" target="_blank" rel="noopener noreferrer">BeeDev Services</a></h5>
+                </div>
+            </div>
+        </footer>
+    )
+}
+
+export default Footer;

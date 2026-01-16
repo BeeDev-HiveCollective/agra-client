@@ -186,6 +186,92 @@ a {
 /* END NAVIGATION STYLES */
 /*                       */
 
+/*                   */
+/* FOOTER STYLES */
+/*                   */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  padding: 3rem 3rem 0 3rem;
+  
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .left {
+      .badges {
+        padding: 2rem 0 0 0;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .footer-links, .office-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 2rem;
+      font-size: 1rem;
+    }
+
+  #footer-link {
+    color: var(--white);
+
+    &:hover {
+      color: var(--service-background);
+    }
+    }
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 0;
+    
+    .site-links {
+      display: inline-flex;
+      justify-content: center;
+    }
+
+    .created-by-info {
+      display: flex;
+      justify-content: center;
+    }
+
+  #footer-link {
+    color: var(--white);
+
+    &:hover {
+      color: var(--service-background);
+    }
+    }
+  }
+  
+  h3, h5, p {
+    color: var(--white);
+  }
+
+  img {
+    height: 2rem;
+    padding: 0;
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+  }
+}
+/*                       */
+/* END NAVIGATION STYLES */
+/*                       */
+
 /*                      */
 /* VISABILITY UTILITIES */
 /*                      */
