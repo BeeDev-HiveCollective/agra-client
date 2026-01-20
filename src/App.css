@@ -185,6 +185,10 @@ a {
     padding: 0.5rem;
     font-size: 0.9rem;
   }
+
+  .slogan {
+    display: none;
+  }
 }
 /*                       */
 /* END NAVIGATION STYLES */
@@ -297,7 +301,7 @@ a {
   }
 }
 /*                       */
-/* END NAVIGATION STYLES */
+/*   END FOOTER STYLES   */
 /*                       */
 
 /*                      */

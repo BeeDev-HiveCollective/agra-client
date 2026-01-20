@@ -30,22 +30,16 @@
 
 }
 
-/* .hero-left {
-    padding: 1rem;
+@media (max-width: 768px) {
 
-    h1 {
-        padding: 1rem;
+    .hero {
+        padding: 1rem 0;
+        
+        .hero-right {
+            img {
+                display: none;
+            }
+        }
     }
 
-    h5 {
-        padding: 1rem;
-    }
-
-    button {
-        margin: 1rem;
-    }
 }
-
-.hero-right img {
-    height: 20rem;
-} */
