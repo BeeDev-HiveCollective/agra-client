@@ -1,0 +1,187 @@
+/* FOUNDER SECTION START */
+
+.founder {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 8rem;
+}
+
+.our-team-header, .founder-header, .founder-signature {
+    color: var(--primary);
+}
+
+.founder-header, .founder-signature {
+    padding: 2rem 0;
+}
+
+.founder-content {
+    padding-right: 4rem;
+}
+
+.placeholder {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--service-background);
+}
+
+/* FOUNDER SECTION END */
+
+/* TEAM CAROUSEL START */
+
+.team-carousel-section {
+    padding: 2rem 0 0 0;
+    background-color: var(--background);
+}
+
+.team-carousel-title {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.team-carousel-container {
+    position: relative;
+    margin:  0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-carousel-wrapper {
+    overflow: hidden;
+    flex: 1;
+}
+
+.team-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.team-member-slide {
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.team-member-card {
+    background-color: var(--service-background);
+    border: 0.25rem solid var(--service-background);
+    text-align: center;
+    transition: transform 0.3s ease, box-shado 0.3s ease;
+    overflow: hidden;
+}
+
+.team-member-card:hover {
+    transform: translateY(-0.025rem);
+    box-shadow: 0 0.25rem 1rem var(--service-background);
+}
+
+.team-member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-member-info {
+    padding: 1rem 0.75rem;
+}
+
+.team-member-name {
+    color: var(--primary);
+    margin-bottom: 0.025rem;
+}
+
+.team-member-title {
+    color: var(--text);
+    margin: 0;
+}
+
+.carousel-arrow {
+    background-color: var(--service-background);
+    color: var(--background);
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0.025rem 0.5rem var(--service-background);
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+    transform: scale(0.95);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.carousel-dot {
+    width: 1rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 0.025rem solid var(--primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    background-color: var(--service-background);
+    transform: scale(1.2);
+}
+
+.carousel-dot:active {
+    background-color: var(--service-background);
+}
+
+@media (max-width: 768px) {
+    .team-member-slide {
+        min-width: 50%;
+    }
+
+    .team-carousel-container {
+        padding: 0 2rem;
+    }
+
+    .team-carousel-title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member-slide {
+        min-width: 100%;
+    }
+
+    .team-carousel-container {
+        padding: 0 1rem;
+    }
+
+    .carousel-arrow {
+        width: 0.25rem;
+        height: 0.25rem;
+        font-size: 0.5rem;
+    }
+
+    .team-carousel-section {
+        padding: 2rem 0;
+    }
+}
+
+/* TEAM CAROUSEL END */
