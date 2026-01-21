@@ -1,21 +1,19 @@
-.our-mission {
-    background-color: var(--service-background);
+.core-values {
     padding: 2rem 3rem;
     margin: 1rem 6rem;
-
+    background-color: var(--service-background);
 }
 
-.our-mission-header {
+.core-values-header, .core-value-header {
     color: var(--primary);
 }
 
-.our-mission-content {
-    color: var(--text);
+.core-value {
     padding: 0.5rem 0 0 0;
 }
 
 @media (max-width: 480px) {
-    .our-mission {
+    .core-values {
         margin: 0;
     }
 }

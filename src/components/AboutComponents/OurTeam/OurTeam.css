@@ -24,6 +24,31 @@
     background-color: var(--service-background);
 }
 
+@media (max-width: 768px) {
+    .founder {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .founder-content {
+        padding: 0;
+    }
+
+    .founder-header {
+        padding: 1rem 0;
+    }
+
+    .founder-signature {
+        padding: 1rem 0;
+    }
+
+    .placeholder {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
 /* FOUNDER SECTION END */
 
 /* TEAM CAROUSEL START */
