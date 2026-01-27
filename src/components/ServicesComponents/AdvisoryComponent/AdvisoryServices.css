@@ -1,0 +1,57 @@
+.advisory-service-header, .advisory-header {
+    color: var(--primary);
+}
+
+.advisory-service-content {
+    color: var(--text);
+    padding: 1rem 0 0 0;
+}
+
+.advisory-services {
+    padding: 1rem 4rem 2rem 4rem;
+    margin: 0 0 1rem 0;
+    background-color: var(--service-background);
+}
+
+.advisory-header {
+    margin: 1rem 0;
+}
+
+.advisory-content {
+    margin-bottom: 1rem;
+}
+
+.advisory-bullets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 11rem 0 1rem;
+
+    li {
+        list-style-type: circle;
+    }
+}
+
+@media (max-width: 768px) {
+    .advisory-bullets {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .advisory-service-header {
+        margin: 2rem 0 0 0;
+    }
+
+    .advisory-services {
+        padding: 1rem 1rem;
+    }
+
+    .advisory-content {
+        margin-bottom: 0.75rem;
+    }
+
+    .advisory-bullets {
+        flex-direction: column;
+    }
+}

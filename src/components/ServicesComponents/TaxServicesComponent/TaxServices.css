@@ -47,7 +47,7 @@
 
 @media (max-width: 480px) {
     .individual-services, .business-services {
-        padding: 1rem 1.25rem;
+        padding: 1rem 1rem;
     }
 
     .individual-services-header, .business-services-header {
