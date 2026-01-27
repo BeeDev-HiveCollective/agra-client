@@ -1,0 +1,43 @@
+.financial-services {
+    padding: 4rem;
+    margin: 2rem 4rem;
+    border: 0.325rem solid var(--primary);
+}
+
+.financial-services-header, .financial-statements-header, .audit-header, .accounting-header {
+    color: var(--primary);
+    margin: 1rem 0;
+}
+
+.financial-statements-content, .audit-content, .accounting-content {
+    margin-bottom: 1rem;
+}
+
+.financial-services-content {
+    color: var(--text);
+    padding: 1rem 0 0 0;
+}
+
+.financial-statements-services, .audit-services, .accounting-services {
+    padding: 1rem 4rem 1rem 4rem;
+    margin: 0 0 1rem 0;
+}
+
+.financial-statements-services, .accounting-services {
+    border-left: 0.4rem solid var(--primary);
+}
+
+.audit-services {
+    background-color: var(--service-background);
+}
+
+.financial-statements-bullets, .audit-bullets, .accounting-bullets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 1rem 1rem 1rem;
+
+    li {
+        list-style-type: circle;
+    }
+}

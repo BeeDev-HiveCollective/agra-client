@@ -3,13 +3,13 @@ import Divider from "../ServicesDividerComponent/ServicesDivider";
 
 function FinancialServices () {
     return (
-        <div>
+        <div className="financial-services">
             <h3 className="financial-services-header">Financial Services</h3>
             <h5 className="financial-services-content">Accurate financial reporting and ongoing accounting serices.</h5>
             <Divider />
             <div className="services">
                 <div className="financial-statements-services">
-                    <h3 className="financial-statements-header">Financial Statements</h3>
+                    <h4 className="financial-statements-header">Financial Statements</h4>
                     <h5 className="financial-statements-content">Preparation and review of comprehensive financial statements for your business. We provide accurate reporting that helps you understand your financial position and make informed decisions.</h5>
                     <div className="financial-statements-bullets">
                         <ul className="bullets-left">
@@ -25,7 +25,7 @@ function FinancialServices () {
                     </div>
                 </div>
                 <div className="audit-services">
-                    <h3 className="audit-header">Audits</h3>
+                    <h4 className="audit-header">Audits</h4>
                     <h5 className="audit-content">Professional audit services to ensure compliance and financial accuracy. Our thorough approach gives stakeholders confidence in your financial reporting.</h5>
                     <div className="audit-bullets">
                         <ul className="bullets-left">
@@ -41,13 +41,13 @@ function FinancialServices () {
                     </div>
                 </div>
                 <div className="accounting-services">
-                    <h3 className="accounting-header">Bookkeeping & Accounting</h3>
+                    <h4 className="accounting-header">Bookkeeping & Accounting</h4>
                     <h5 className="accounting-content">Ongoing accounting support to keep your financial records organized and current. From daily transactions to monthly reconciliations, we handle the details so you can focus on your business.</h5>
                     <div className="accounting-bullets">
                         <ul className="bullets-left">
                             <li>Monthly bookkeeping</li>
                             <li>Accounts payable/receivable</li>
-                            <li>Bankreconciliation</li>
+                            <li>Bank reconciliation</li>
                         </ul>
                         <ul className="bullets-right">
                             <li>Payroll processing</li>
