@@ -2,6 +2,10 @@
     color: var(--primary);
 }
 
+.advisory-service-header {
+    padding: 2rem 0 0 0;
+}
+
 .advisory-service-content {
     color: var(--text);
     padding: 1rem 0 0 0;

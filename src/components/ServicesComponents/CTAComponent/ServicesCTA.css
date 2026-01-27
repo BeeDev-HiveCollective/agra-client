@@ -1,0 +1,25 @@
+.services-cta {
+    padding: 4rem 0 2rem 0;
+}
+
+.CTA-header {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.325rem;
+}
+
+.CTA-content {
+    color: var(--text);
+    text-align: center;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.CTA-button {
+    background-color: var(--primary);
+    color: var(--white);
+}
