@@ -41,3 +41,36 @@
         list-style-type: circle;
     }
 }
+
+@media (max-width: 768px) {
+    .financial-services {
+        padding: 1rem 2rem;
+    }
+
+    .financial-statements-services, .audit-services, .accounting-services {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .bullets-left {
+        max-width: 13rem;
+    }
+
+    .bullets-right {
+        max-width: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .financial-services {
+        margin: 0;
+    }
+
+    .financial-services-header {
+        margin: 1rem 0 0 0;
+    }
+
+    .financial-statements-bullets, .audit-bullets, .accounting-bullets {
+        flex-direction: column;
+    }
+}
