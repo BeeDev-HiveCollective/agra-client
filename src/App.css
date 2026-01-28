@@ -172,6 +172,10 @@ a {
     padding: 1rem;
     gap: 1rem;
   }
+
+  .nav-brand {
+    text-align: center;
+  }
   
   .nav-links {
     gap: 1rem;
@@ -180,6 +184,10 @@ a {
   .nav-links a {
     padding: 0.5rem;
     font-size: 0.9rem;
+  }
+
+  .slogan {
+    display: none;
   }
 }
 /*                       */
@@ -271,10 +279,29 @@ a {
 @media (max-width: 768px) {
   .footer {
     display: flex;
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      img {
+        height: 1.5rem;
+      }
+    }
+
+    .footer-links {
+      display: none;
+    }
+
+    .office-info {
+      width: 18rem;
+      align-items: flex-end;
+    }
   }
 }
 /*                       */
-/* END NAVIGATION STYLES */
+/*   END FOOTER STYLES   */
 /*                       */
 
 /*                      */

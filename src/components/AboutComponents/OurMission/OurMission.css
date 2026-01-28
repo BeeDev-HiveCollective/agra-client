@@ -1,0 +1,21 @@
+.our-mission {
+    background-color: var(--service-background);
+    padding: 2rem 3rem;
+    margin: 1rem 6rem;
+
+}
+
+.our-mission-header {
+    color: var(--primary);
+}
+
+.our-mission-content {
+    color: var(--text);
+    padding: 0.5rem 0 0 0;
+}
+
+@media (max-width: 480px) {
+    .our-mission {
+        margin: 0;
+    }
+}

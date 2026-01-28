@@ -1,0 +1,64 @@
+.tax-services-header, .individual-services-header, .business-services-header {
+    color: var(--primary);
+}
+
+.tax-services-content {
+    color: var(--text);
+    padding: 1rem 0 0 0;
+}
+
+.individual-services, .business-services {
+    padding: 1rem 4rem 2rem 4rem;
+    margin: 0 0 1rem 0;
+}
+
+.individual-services-header, .business-services-header {
+    margin: 1rem 0;
+}
+
+.individual-services-content, .business-services-content {
+    margin-bottom: 1rem;
+}
+
+.individual-services {
+    border-left: 0.4rem solid var(--primary);
+}
+
+.business-services {
+    background-color: var(--service-background);
+}
+
+.individual-services-bullets, .business-services-bullets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 11rem 0 1rem;
+
+    li {
+        list-style-type: circle;
+    }
+}
+
+@media (max-width: 768px) {
+    .individual-services-bullets, .business-services-bullets {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .individual-services, .business-services {
+        padding: 1rem 1rem;
+    }
+
+    .individual-services-header, .business-services-header {
+        margin: 0.5rem 0;
+    }
+
+    .individual-services-content, .business-services-content {
+        margin-bottom: 0.75rem;
+    }
+
+    .individual-services-bullets, .business-services-bullets {
+        flex-direction: column;
+    }
+}

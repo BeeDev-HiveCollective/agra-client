@@ -1,0 +1,19 @@
+.core-values {
+    padding: 2rem 3rem;
+    margin: 1rem 6rem;
+    background-color: var(--service-background);
+}
+
+.core-values-header, .core-value-header {
+    color: var(--primary);
+}
+
+.core-value {
+    padding: 0.5rem 0 0 0;
+}
+
+@media (max-width: 480px) {
+    .core-values {
+        margin: 0;
+    }
+}
