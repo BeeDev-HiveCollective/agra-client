@@ -1,8 +1,9 @@
+import ResourcesHeader from "../components/ResourcesComponent/ResourcesHeaderComponent/ResourcesHeader";
+
 function Resources() {
   return (
     <div>
-      <h1>Resources</h1>
-      <p>Helpful links and information</p>
+      <ResourcesHeader />
     </div>
   );
 }
