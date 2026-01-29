@@ -18,7 +18,7 @@ function IRSResources () {
                     </div>
                     <div className="refund resource">
                         <div className="left">
-                            <h4 className="refund-header header header">Where's My Refund?</h4>
+                            <h4 className="refund-header header">Where's My Refund?</h4>
                             <h5 className="refund-content">Track your federal tax refund.</h5>                        
                         </div>
                         <div className="right">
