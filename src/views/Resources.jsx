@@ -2,6 +2,7 @@ import ResourcesHeader from "../components/ResourcesComponent/ResourcesHeaderCom
 import IRSResources from "../components/ResourcesComponent/IRSResourcesComponent/IRSResources";
 import VirginiaResources from "../components/ResourcesComponent/VirginiaTaxResourcesComponent/VirginiaResources";
 import ProfessionalAffiliations from "../components/ResourcesComponent/ProfessionalAffiliationResources/ProfessionalAffiliations";
+import SecurityNotice from "../components/ResourcesComponent/SecurityNoticeComponent/SecurityNotice";
 
 function Resources() {
   return (
@@ -10,6 +11,7 @@ function Resources() {
       <IRSResources />
       <VirginiaResources />
       <ProfessionalAffiliations />
+      <SecurityNotice />
     </div>
   );
 }

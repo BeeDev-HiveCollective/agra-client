@@ -1,0 +1,46 @@
+.security-notice {
+    padding: 4rem 0 2rem 0;
+}
+
+.security-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8rem;
+}
+
+.security-notice-header {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.325rem;
+}
+
+.security-notice-content {
+    color: var(--text);
+    padding: 2rem;
+}
+
+.security-icon {
+    height: 10rem;
+}
+
+@media (max-width: 768px) {
+    .security-content {
+        padding: 0 1rem;
+    }
+
+    .security-notice {
+        padding: 4rem 0 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .security-content {
+        padding: 1rem;
+        text-align: center;
+
+        img {
+            display: none;
+        }
+    }
+}
