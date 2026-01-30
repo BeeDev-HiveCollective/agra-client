@@ -78,21 +78,61 @@ export default function ContactForm() {
         <div className='contact-form'>
             <form onSubmit={sendMail}>
                 <h3 className='contactTitle'>Send us a Message</h3>
-                <div>
-                    <input type="text" />
-                    <label htmlFor=""></label>
+                <div className="form-input">
+                    <label htmlFor="userName">Name: <span className="form-required">*</span></label>
+                    <input
+                        name="userName"
+                        type="text"
+                        id="userName"
+                        required
+                        minLength={3}
+                        value={userName}
+                        onChange={(e) => setUserName(e.target.value)}
+                        placeholder=""
+                        className="form-text"
+                    />
                 </div>
-                <div>
-                    <input type="text" />
-                    <label htmlFor=""></label>
+                <div className="form-input">
+                    <label htmlFor="contact">Email: <span className="form-required">*</span></label>
+                    <input
+                        name="contact"
+                        type="email"
+                        id="contact"
+                        required
+                        value={contact}
+                        onChange={(e)=> setContact(e.target.value)}
+                        placeholder=""
+                        className="form-text"
+                    />
                 </div>
-                <div>
-                    <input type="text" />
-                    <label htmlFor=""></label>
+                <div className="form-input">
+                    <label htmlFor="subject">Subject: <span className="form-required">*</span></label>
+                    <input
+                        name="subject"
+                        type="text"
+                        id="subject"
+                        required
+                        minLength={3}
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                        placeholder=""
+                        className="form-text"
+                    />
                 </div>
-                <div>
-                    <input type="text" />
-                    <label htmlFor=""></label>
+                <div className="form-input">
+                    <label htmlFor="message">Message: <span className="form-required">*</span></label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        required
+                        minLength={5}
+                        cols={10}
+                        rows={5}
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder=""
+                        className="form-text"
+                    />
                 </div>
                 <input
                     type="text"
@@ -103,8 +143,8 @@ export default function ContactForm() {
                     style={{ display: 'none' }}
                     tabIndex={-1}
                 />
-                <div className="entry_area captcha">
-                    <label className="label_line" htmlFor="captchaAnswer">
+                <div className="form-input">
+                    <label htmlFor="captchaAnswer">
                         {isCaptchaLoading
                             ? 'Loading spam protection...'
                             : captchaQuestion || 'Spam protection'}
@@ -116,15 +156,16 @@ export default function ContactForm() {
                         required
                         value={captchaAnswer}
                         onChange={(e) => setCaptchaAnswer(e.target.value)}
-                        placeholder="" // Leave blank!!
+                        placeholder=""
                         disabled={isCaptchaLoading || !captchaId}
+                        className="form-text"
                     />
                     {captchaLoadError && (
                         <p className="captcha_error">{captchaLoadError}</p>
                     )}
                 </div>
                 {isSubmitting ? (
-                    <div className="form_button_box">
+                    <div className="primary-button">
                         {!mailError && !mailFail && !success ? (
                             <img src="" alt="Spinner Icon" className="spinner"/>
                         ) : (
