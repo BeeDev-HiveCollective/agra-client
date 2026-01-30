@@ -3,9 +3,17 @@ import Aicpa from "../assets/AICPA_badge_white.png";
 import Swam from "../assets/SWaM_badge_white.png";
 import Naba from "../assets/NABA_badge_white.png";
 
+
 import { Link } from "react-router-dom";
 
 function Footer() {
+
+    const PhoneLink = import.meta.env.VITE_LINK_PHONE;
+    const PhoneDisplay = import.meta.env.VITE_DISPLAY_PHONE;
+    const EmailLink = import.meta.env.VITE_MAIN_EMAIL;
+    const Address01 = import.meta.env.VITE_ADDRESS_LINE1;
+    const Address02 = import.meta.env.VITE_ADDRESS_LINE2;
+    const Address03 = import.meta.env.VITE_ADDRESS_LINE3;
     return (
         <footer className="footer">
             <div className="top">
@@ -41,10 +49,10 @@ function Footer() {
                     </div>
                     <div className="office-info">
                         <h3><address>Office Info</address></h3>
-                        <h5><address>123 Main Street, Suite 200</address></h5>
-                        <h5>Richmond, Virginia 23219</h5>
-                        <h5>Phone: (123) 456-7890</h5>
-                        <h5>Email: info@agreese.com</h5>
+                        <h5><address>{ Address01 }</address></h5>
+                        <h5>{ Address02 } { Address03 }</h5>
+                        <h5>Phone: <a href={ PhoneLink }>{ PhoneDisplay }</a></h5>
+                        <h5>Email: <a href={`mailto:${ EmailLink }?subject=Request%20For%20Tax%20Services&body=Hello,%0A%0AI%20would%20like%20to%20inquire%20about...`}>{ EmailLink }</a></h5>
                     </div>
                 </div>
             </div>
