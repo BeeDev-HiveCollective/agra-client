@@ -1,6 +1,6 @@
-import "./ServicesDivider.css";
+import "./divider.css";
 
-function ServicesDivider () {
+function Divider () {
     return (
         <div className="divider">
             <div className="line-1"></div>
@@ -10,4 +10,4 @@ function ServicesDivider () {
     )
 }
 
-export default ServicesDivider;
+export default Divider;

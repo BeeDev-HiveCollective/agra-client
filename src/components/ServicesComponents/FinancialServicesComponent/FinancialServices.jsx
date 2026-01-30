@@ -1,5 +1,5 @@
 import "./FinancialServices.css";
-import Divider from "../ServicesDividerComponent/ServicesDivider";
+import Divider from "../../ReusableComponents/Divider";
 
 function FinancialServices () {
     return (

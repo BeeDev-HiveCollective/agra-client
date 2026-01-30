@@ -1,11 +1,173 @@
 
+import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+
+import useFormValidation from '../../CustomHooks/useFormValidation'
+import useMailSubmission from '../../CustomHooks/useMailSubmission'
 
 export default function ContactForm() {
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+    const [contact, setContact] = useState('')
+    const [userName, setUserName] = useState('')
+    const [success, setSuccess] = useState('')
+    const [mailError, setMailError] = useState('')
+    const [errorCount, setErrorCount] = useState(0)
+    const [mailFail, setMailFail] = useState(false)
+    const [isButtonVisible, setIsButtonVisible] = useState(true)
+    const SupportEmail = import.meta.env.VITE_SUPPORT_EMAIL
 
+    const [captchaQuestion, setCaptchaQuestion] = useState('')
+    const [captchaId, setCaptchaId] = useState('')
+    const [captchaAnswer, setCaptchaAnswer] = useState('')
+    const [isCaptchaLoading, setIsCaptchaLoading] = useState(false)
+    const [captchaLoadError, setCaptchaLoadError] = useState('')
+    const [website, setWebsite] = useState('')
+
+    const isFormValid = useFormValidation({ userName, subject, message, contact })
+
+    const { sendMail, isSubmitting } = useMailSubmission({
+        subject,
+        message,
+        contact,
+        userName,
+        captchaId,
+        captchaAnswer,
+        website,
+        setSuccess,
+        setMailError,
+        setErrorCount,
+        setMailFail,
+        setIsButtonVisible,
+        setSubject,
+        setMessage,
+        setContact,
+        setUserName,
+        setCaptchaAnswer,
+    });
+
+        useEffect(() => {
+        const fetchCaptcha = async () => {
+            try {
+                setIsCaptchaLoading(true)
+                setCaptchaLoadError('')
+
+                const apiBase = import.meta.env.VITE_EMAIL_URL || ''
+                const response = await fetch(`${apiBase}/captcha`)
+                console.log(response)
+                if (!response.ok) {
+                    throw new Error('Failed to load captcha')
+                }
+
+                const data = await response.json()
+                setCaptchaId(data.id)
+                setCaptchaQuestion(data.question)
+                setCaptchaAnswer('')
+            } catch (err) {
+                console.error('Error loading captcha:', err)
+                setCaptchaLoadError('Unable to load spam protection. Please try again.')
+            } finally {
+                setIsCaptchaLoading(false)
+            }
+        };
+
+        fetchCaptcha()
+    }, []);
 
     return(
-        <>
-            
-        </>
+        <div className='contact-form'>
+            <form onSubmit={sendMail}>
+                <h3 className='contactTitle'>Send us a Message</h3>
+                <div>
+                    <input type="text" />
+                    <label htmlFor=""></label>
+                </div>
+                <div>
+                    <input type="text" />
+                    <label htmlFor=""></label>
+                </div>
+                <div>
+                    <input type="text" />
+                    <label htmlFor=""></label>
+                </div>
+                <div>
+                    <input type="text" />
+                    <label htmlFor=""></label>
+                </div>
+                <input
+                    type="text"
+                    name="website"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                    autoComplete="off"
+                    style={{ display: 'none' }}
+                    tabIndex={-1}
+                />
+                <div className="entry_area captcha">
+                    <label className="label_line" htmlFor="captchaAnswer">
+                        {isCaptchaLoading
+                            ? 'Loading spam protection...'
+                            : captchaQuestion || 'Spam protection'}
+                    </label>
+                    <input
+                        name="captchaAnswer"
+                        type="text"
+                        id="captchaAnswer"
+                        required
+                        value={captchaAnswer}
+                        onChange={(e) => setCaptchaAnswer(e.target.value)}
+                        placeholder="" // Leave blank!!
+                        disabled={isCaptchaLoading || !captchaId}
+                    />
+                    {captchaLoadError && (
+                        <p className="captcha_error">{captchaLoadError}</p>
+                    )}
+                </div>
+                {isSubmitting ? (
+                    <div className="form_button_box">
+                        {!mailError && !mailFail && !success ? (
+                            <img src="" alt="Spinner Icon" className="spinner"/>
+                        ) : (
+                            <>&nbsp;</>
+                        )}
+                    </div>
+                ) : null}
+                {!isSubmitting && (
+                    <div className="form_button_box">
+                        <button hidden={!isButtonVisible} type="submit" disabled={!isFormValid}>
+                            SUBMIT
+                        </button>
+                    </div>
+                )}
+                <div>
+                    {mailError && !mailFail && (
+                        <div className="mailer_messages">
+                            <h3>{mailError}</h3>
+                            <p>Please try again</p>
+                        </div>
+                    )}
+                    {mailFail && (
+                        <div className="mailer_messages failure">
+                            <h3>We are experiencing technical problems</h3>
+                            <p>Please contact us directly at -</p>
+                            <a
+                                href={`mailto:${SupportEmail}?subject=Customer%20Contact%20Support&body=Hello,%0A%0AI%20would%20like%20to%20inquire%20about`}
+                            >
+                                <b>{SupportEmail}</b>
+                            </a>
+                        </div>
+                    )}
+                    {success && (
+                        <div className="mailer_messages success">
+                            <h2>{success}</h2>
+                            <p>Redirecting you home...</p>
+                            <p>
+                                Click <Link to="/">HERE</Link> if you are not redirected
+                            </p>
+                        </div>
+                    )}
+                </div>
+            </form>
+        </div>
     )
 }

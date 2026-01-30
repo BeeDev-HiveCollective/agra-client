@@ -1,5 +1,5 @@
 import "./TaxServices.css";
-import Divider from "../ServicesDividerComponent/ServicesDivider";
+import Divider from "../../ReusableComponents/Divider";
 
 function TaxServices () {
     return (

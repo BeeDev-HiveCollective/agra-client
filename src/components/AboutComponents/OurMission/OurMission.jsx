@@ -1,5 +1,5 @@
 import "./OurMission.css";
-import Divider from "../AboutDivider/AboutDivider";
+import Divider from "../../ReusableComponents/Divider";
 
 function OurMission () {
     return (
