@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./OurTeam.css";
-import Divider from "../AboutDivider/AboutDivider";
+import Divider from "../../ReusableComponents/Divider";
 
 function OurTeam () {
 
