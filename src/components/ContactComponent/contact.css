@@ -59,6 +59,25 @@
     width: 15rem;
     background-color: var(--service-background);
 }
+
+
+/* Form CSS */
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+.form-text {
+    background-color: var(--background);
+    border: 2px solid var(--form-background);
+    color: var(--text);
+}
+label {
+    color: var(--text);
+}
+.form-required {
+    color: var(--required);
+}
+
 @media (max-width: 768px) {
     .contactHeader {
         height: 20rem;
