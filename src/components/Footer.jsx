@@ -21,7 +21,7 @@ function Footer() {
                     <div className="name">
                         <Link to="/">
                             <h3>A.G. Reese & Associates, P.C.</h3>
-                            <h5>Certified Public Accountants</h5>
+                            <h5>Integrity at its best</h5>
                         </Link>
                     </div>
                     <div className="badges">
