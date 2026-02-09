@@ -23,6 +23,7 @@
     #badge_link_text {
         font-size: 1rem;
         text-decoration: underline;
+        color: var(--primary);
     }
 }
 
