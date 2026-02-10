@@ -48,7 +48,7 @@ function Footer() {
                         <h5><a id="footer-link" href="/contact">Contact Us</a></h5>
                     </div>
                     <div className="office-info">
-                        <h3><address>Office Info</address></h3>
+                        <h3><address id="office-info-header">Office Info</address></h3>
                         <h5><address>{ Address01 }</address></h5>
                         <h5>{ Address02 } { Address03 }</h5>
                         <h5>Phone: <a href={ PhoneLink }>{ PhoneDisplay }</a></h5>

@@ -243,6 +243,10 @@ a {
     align-items: flex-start;
     padding: 0 2rem;
     font-size: 1rem;
+
+    #office-info-header {
+      font-family: "Merriweather", sans-serif;
+    }
   }
   
   .bottom {
