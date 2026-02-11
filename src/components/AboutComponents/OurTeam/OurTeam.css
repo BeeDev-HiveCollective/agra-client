@@ -3,14 +3,14 @@
 .founder {
     display: flex;
     flex-direction: row;
-    padding: 1rem 8rem;
+    padding: 1rem 4rem;
 }
 
-.our-team-header, .founder-header, .founder-signature {
+.our-team-header, .founder-header {
     color: var(--primary);
 }
 
-.founder-header, .founder-signature {
+.founder-header {
     padding: 2rem 0;
 }
 
@@ -36,10 +36,6 @@
     }
 
     .founder-header {
-        padding: 1rem 0;
-    }
-
-    .founder-signature {
         padding: 1rem 0;
     }
 

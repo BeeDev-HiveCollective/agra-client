@@ -7,11 +7,13 @@ function OurTeam () {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const teamMembers = [
-        { name: 'Lisa Jones, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Partner' },
-        { name: 'Kimberly R. Baine, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Senior CPA' },
+        { name: 'Lisa Jones, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Owner & Shareholder' },
+        { name: 'Kimberly R. Baine, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Owner & Shareholder' },
+        { name: 'Thomas Reese', image: '../../../assets/NABA_badge_green.png', title: 'Accountant' },
+        { name: 'Deborah Coles', image: '../../../assets/NABA_badge_green.png', title: "Accounting Clerk" },
+        { name: 'Chiquita Bracey-Tabb', image: '../../../assets/NABA_badge_green.png', title: 'Associate' },
         { name: 'Raymond E. Payne, Jr.', image: '../../../assets/NABA_badge_green.png', title: 'Accountant' },
-        { name: 'Thomas Reese', image: '../../../assets/NABA_badge_green.png', title: 'Associate' },
-        { name: 'A. LoTran Walker', image: '../../../assets/NABA_badge_green.png', title: 'Staff Accountant' }
+        { name: 'A. LaFran Walker', image: '../../../assets/NABA_badge_green.png', title: 'Associate' }
     ];
 
     // Number of slides to show at once (adjust based on screen size)
@@ -31,9 +33,12 @@ function OurTeam () {
             <h3 className="our-team-header">Meet Our Team</h3>
             <div className="founder">
                 <div className="founder-content">
-                    <h4 className="founder-header">Our Founder</h4>
-                    <h5 className="founder-content">Brief biography, history and credentials could appear here, highlighting years of experience, specializations, and background.</h5>
-                    <h4 className="founder-signature">Founders Signature - A Nice Cursive Script Font</h4>                
+                    <h4 className="founder-header">Alan G. Reese, CPA</h4>
+                    <h5 className="founder-content">Mr. Reese, the Founder and previous President of A. G. Reese &amp; Associates, P. C.,
+established the firm in 1983. He is a graduate of Virginia State University with a
+Bachelor of Science Degree in Accounting and is a former member of the international
+accounting firm of Price Waterhouse &amp; Co. Mr. Reese and his firm are members of the
+AICPA and the Virginia Society of Certified Public Accountants.</h5>
                 </div>
                 <div className="founder-image">
                     <div className="placeholder"></div>
