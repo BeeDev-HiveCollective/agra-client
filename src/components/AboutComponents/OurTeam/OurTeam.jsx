@@ -34,11 +34,7 @@ function OurTeam () {
             <div className="founder">
                 <div className="founder-content">
                     <h4 className="founder-header">Alan G. Reese, CPA</h4>
-                    <h5 className="founder-content">Mr. Reese, the Founder and previous President of A. G. Reese &amp; Associates, P. C.,
-established the firm in 1983. He is a graduate of Virginia State University with a
-Bachelor of Science Degree in Accounting and is a former member of the international
-accounting firm of Price Waterhouse &amp; Co. Mr. Reese and his firm are members of the
-AICPA and the Virginia Society of Certified Public Accountants.</h5>
+                    <h5 className="founder-content">Alan G. Reese, the Founder and previous President of A.G. Reese & Associates, P.C., established the firm in 1983. He is a graduate of Virginia State University with a Bachelor of Science Degree in Accounting, and is a former member of the International Accounting Firm of Price Waterhouse & Co.</h5>
                 </div>
                 <div className="founder-image">
                     <div className="placeholder"></div>
