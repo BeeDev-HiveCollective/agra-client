@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import "./OurTeam.css";
 import Divider from "../../ReusableComponents/Divider";
+import Badge from "../../../assets/AG_favicon.png";
 
 function OurTeam () {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const teamMembers = [
-        { name: 'Lisa Jones, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Owner & Shareholder' },
-        { name: 'Kimberly R. Baine, CPA', image: '../../../assets/NABA_badge_green.png', title: 'Owner & Shareholder' },
-        { name: 'Thomas Reese', image: '../../../assets/NABA_badge_green.png', title: 'Accountant' },
-        { name: 'Deborah Coles', image: '../../../assets/NABA_badge_green.png', title: "Accounting Clerk" },
-        { name: 'Chiquita Bracey-Tabb', image: '../../../assets/NABA_badge_green.png', title: 'Associate' },
-        { name: 'Raymond E. Payne, Jr.', image: '../../../assets/NABA_badge_green.png', title: 'Accountant' },
-        { name: 'A. LaFran Walker', image: '../../../assets/NABA_badge_green.png', title: 'Associate' }
+        { name: 'Lisa Jones, CPA', image: Badge, title: 'Owner & Shareholder' },
+        { name: 'Kimberly R. Baine, CPA', image: Badge, title: 'Owner & Shareholder' },
+        { name: 'Thomas Reese', image: Badge, title: 'Accountant' },
+        { name: 'Deborah Coles', image: Badge, title: "Accounting Clerk" },
+        { name: 'Chiquita Bracey-Tabb', image: Badge, title: 'Associate' },
+        { name: 'Raymond E. Payne, Jr.', image: Badge, title: 'Accountant' },
+        { name: 'A. LaFran Walker', image: Badge, title: 'Associate' }
     ];
 
     // Number of slides to show at once (adjust based on screen size)
@@ -21,7 +22,7 @@ function OurTeam () {
     const maxIndex = Math.max(0, teamMembers.length - slidesToShow);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === maxIndex ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === maxIndex ? 0 : prev - 1));
     };
 
     const handleNext = () => {
@@ -52,7 +53,7 @@ function OurTeam () {
                         <div 
                             className='team-carousel-track'
                             style={{
-                                transform: 'translateX(-${currentIndex * (100 / slidesToShow)}%)',
+                                transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`,
                         }}>
                             { teamMembers.map((member, index) => (
                                 <div key={ index } className='team-member-slide'>
