@@ -1,5 +1,6 @@
 import "./VirginiaResources.css";
 import LinkImage from "../../../assets/link_image.png";
+import { Link } from "react-router";
 
 function VirginiaResources () {
     return (
@@ -13,7 +14,9 @@ function VirginiaResources () {
                             <h5 className="virginia-tax-content">Virginia Department of Taxation Homepage.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.tax.virginia.gov/" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                     <div className="refund resource">
@@ -22,7 +25,9 @@ function VirginiaResources () {
                             <h5 className="refund-content">Check your Virginia State refund status.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.tax.virginia.gov/wheres-my-refund" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -33,7 +38,9 @@ function VirginiaResources () {
                             <h5 className="virginia-forms-content">Download Virginia State tax forms.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.tax.virginia.gov/forms" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                     <div className="business-registration resource">
@@ -42,7 +49,9 @@ function VirginiaResources () {
                             <h5 className="business-registration-content">Register your business with Virginia.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.tax.virginia.gov/register-business-virginia" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                 </div>

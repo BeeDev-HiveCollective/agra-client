@@ -1,5 +1,6 @@
 import "./IRSResources.css";
 import LinkImage from "../../../assets/link_image.png";
+import { Link } from 'react-router-dom';
 
 function IRSResources () {
     return (
@@ -13,7 +14,9 @@ function IRSResources () {
                             <h5 className="IRS-resources-content">Make payments directly to the IRS.</h5>                        
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.irs.gov/payments" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                     <div className="refund resource">
@@ -22,7 +25,9 @@ function IRSResources () {
                             <h5 className="refund-content">Track your federal tax refund.</h5>                        
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.irs.gov/wheres-my-refund" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -33,7 +38,9 @@ function IRSResources () {
                             <h5 className="IRS-forms-content">Download current and prior year tax forms.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.irs.gov/forms-pubs/prior-year" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                     <div className="IRS-free-file resource">
@@ -42,7 +49,9 @@ function IRSResources () {
                             <h5 className="IRS-free-file-content">Free tax filing options for eligible tax payers.</h5>
                         </div>
                         <div className="right">
-                            <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            <Link to= "https://www.irs.gov/e-file-do-your-taxes-for-free" target="_blank" rel="noopener noreferrer">
+                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
+                            </Link>
                         </div>
                     </div>
                 </div>
