@@ -10,7 +10,7 @@ function TaxServices () {
             <div className="services">
                 <div className="individual-services">
                     <h4 className="individual-services-header">Individual Tax Preparation</h4>
-                    <h5 className="individual-services-content">Expert preparation of personal tax returns with accuracy and attention to detail. We ensure you maximize deductions and credits while staying fully compliant with current tax laws.</h5>
+                    <h5 className="individual-services-content">Specialized preparation of personal tax returns with accuracy and attention to detail. We ensure you maximize deductions and credits while staying fully compliant with current tax laws.</h5>
                     <div className="individual-services-bullets">
                         <ul className="individual-services-bullets-left">
                             <li>Individual tax returns (Form 1040)</li>

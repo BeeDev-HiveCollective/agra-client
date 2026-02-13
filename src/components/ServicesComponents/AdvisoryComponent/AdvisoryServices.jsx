@@ -9,7 +9,7 @@ function AdvisoryServices () {
             <Divider />
             <div className="advisory-services">
                 <h4 className="advisory-header">Consultations</h4>
-                <h5 className="advisory-content">Expert guidance on tax planning, business structure, and financial strategy. Whether you're starting a business or planning for the future, we provide the insights you need to succeed.</h5>
+                <h5 className="advisory-content">Skilled guidance on tax planning, business structure, and financial strategy. Whether you're starting a business or planning for the future, we provide the insights you need to succeed.</h5>
                 <div className="advisory-bullets">
                     <ul className="advisory-bullets-left">
                         <li>Merger and acquisition support</li>
