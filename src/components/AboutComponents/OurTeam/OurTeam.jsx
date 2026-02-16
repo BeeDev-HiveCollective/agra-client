@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./OurTeam.css";
 import Divider from "../../ReusableComponents/Divider";
 import Badge from "../../../assets/AG_favicon.png";
@@ -6,6 +6,7 @@ import Badge from "../../../assets/AG_favicon.png";
 function OurTeam () {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [slidesToShow, setSlidesToShow] = useState(4);
 
     const teamMembers = [
         { name: 'Lisa Jones, CPA', image: Badge, title: 'Owner & Shareholder' },
@@ -18,11 +19,26 @@ function OurTeam () {
     ];
 
     // Number of slides to show at once (adjust based on screen size)
-    const slidesToShow = 4;
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 480) {
+                setSlidesToShow(1);
+            } else if (window.innerWidth <= 768) {
+                setSlidesToShow(2);
+            } else {
+                setSlidesToShow(4);
+            }
+            setCurrentIndex(0);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const maxIndex = Math.max(0, teamMembers.length - slidesToShow);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === maxIndex ? 0 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
     };
 
     const handleNext = () => {

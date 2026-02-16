@@ -32,6 +32,17 @@
     .founder {
         padding: 0;
     }
+    .founder-image {
+        display: flex;
+        align-items: center;
+    }
+    .founder-content {
+        padding: 1rem;
+
+        h5 {
+            padding-bottom: 2rem;
+        }
+    }
 }
 
 @media (max-width: 480px) {
