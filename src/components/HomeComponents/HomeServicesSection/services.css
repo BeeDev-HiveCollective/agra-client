@@ -1,13 +1,7 @@
-/* 
-1. I want the left and right div to be in columns next to each other 
-2. I want each of the service boxes to be the same height
-3. I want service bar boxes to have the green service bar on the left of the box
-4. I want service background boxes to have the background color
-*/
-
 .services {
     display: flex;
     flex-direction: column;
+    width: 100%;
     
     .header {
         display: flex;
@@ -20,18 +14,24 @@
         display: flex;
         flex-direction: row;
         margin: 2rem 0;
+        width: 100%;
+        gap: 1rem;
 
         .left, .right {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            flex: 1 1 50%;
+            width: 100%;
         }
 
         .service-box {
             display: flex;
             flex-direction: column;
-            margin: 0.5rem;
-            padding: 2rem 1rem 2rem 1rem;
+            margin: 0.5rem 0;
+            padding: 2rem 1rem;
+            width: 100%;
+            box-sizing: border-box;
 
         }
         
@@ -59,4 +59,20 @@
         text-align: center;
     }
 
+}
+
+@media (max-width: 768px) {
+    .services {
+        .header {
+            text-align: center;
+        }
+
+        .service-descriptions {
+            gap: 1rem;
+
+            .left, .right {
+                min-width: 48%;
+            }
+        }
+    }
 }

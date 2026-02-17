@@ -10,7 +10,7 @@ export default function HeroSection() {
             <div className="hero-left">
                 <h1>Trusted Accounting Services in Richmond</h1>
                 <h4>A.G. Reese & Associates, P.C. provides reliable and personalized accounting, tax, and audit services. We're a small, trusted firm in Richmond, Virginia, committed to accuracy and building long-term client relationships.</h4>
-                <div>
+                <div className="button-div">
                     <Link to="/contact">
                         <button className="primary-button">Contact Us</button>
                     </Link>
