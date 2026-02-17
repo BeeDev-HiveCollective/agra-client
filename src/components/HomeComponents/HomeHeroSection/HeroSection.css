@@ -33,13 +33,17 @@
 @media (max-width: 768px) {
 
     .hero {
-        padding: 1rem 0;
+        padding: 1rem 0 1.5rem;
 
         .hero-left {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+
+            h1 {
+                padding: 1rem 0 0;
+            }
         }
         
         .hero-right {
