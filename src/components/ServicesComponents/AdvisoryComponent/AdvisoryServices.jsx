@@ -1,5 +1,5 @@
 import "./AdvisoryServices.css";
-import Divider from "../../ReusableComponents/Divider";
+import Divider from "../../ReusableComponents/DividerComponent/Divider";
 
 function AdvisoryServices () {
     return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./OurTeam.css";
-import Divider from "../../ReusableComponents/Divider";
+import Divider from "../../ReusableComponents/DividerComponent/Divider";
 import Badge from "../../../assets/AG_favicon.png";
 
 function OurTeam () {
