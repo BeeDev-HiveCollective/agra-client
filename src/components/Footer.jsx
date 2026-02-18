@@ -17,7 +17,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="top">
-                <div className="left">
+                <div className="footer-left">
                     <div className="name">
                         <Link to="/">
                             <h3>A.G. Reese & Associates, P.C.</h3>
@@ -39,7 +39,7 @@ function Footer() {
                         </Link>
                     </div>
                 </div>
-                <div className="right">
+                <div className="footer-right">
                     <div className="footer-links">
                         <h3>Quick Links</h3>
                         <h5><a id="footer-link" href="/about">About Us</a></h5>

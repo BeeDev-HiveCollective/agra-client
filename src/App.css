@@ -212,13 +212,13 @@ a {
     flex-direction: row;
     justify-content: space-between;
     
-    .left {
+    .footer-left {
       .badges {
         padding: 2rem 0 0 0;
       }
     }
 
-    .right {
+    .footer-right {
       display: flex;
       flex-direction: row;
 
@@ -289,12 +289,18 @@ a {
     display: flex;
 
     .badges {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-
       img {
         height: 1.5rem;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+
+    .top {
+      .footer-left {
+        min-width: 47%;
+      }
+      .footer-right {
+        min-width: 50%;
       }
     }
 
@@ -303,8 +309,9 @@ a {
     }
 
     .office-info {
-      width: 18rem;
+      width: 100%;
       align-items: flex-end;
+      padding: 0;
     }
   }
 }
