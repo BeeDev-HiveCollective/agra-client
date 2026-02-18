@@ -297,7 +297,10 @@ a {
 
     .top {
       .footer-left {
+        display: flex;
         min-width: 47%;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .footer-right {
         min-width: 50%;
