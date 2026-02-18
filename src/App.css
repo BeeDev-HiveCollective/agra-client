@@ -194,6 +194,13 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .navigation {
+    padding-top: 1.5rem;
+    gap: 0.25rem;
+  }
+}
 /*                       */
 /* END NAVIGATION STYLES */
 /*                       */
