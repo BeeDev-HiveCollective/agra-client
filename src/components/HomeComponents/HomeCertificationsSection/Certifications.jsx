@@ -9,16 +9,20 @@ import { Link } from "react-router-dom";
 export default function CertificationsSection() {
     return (
         <div className="certifications">
+            <div className="header">
+                <h2 className="member_badges_header">Professional Affiliations</h2>
+                <h5 className="member_badges_content">Click the images below to learn more about our affiliations</h5>
+            </div>
             <div className="badges">
                 <Link to="https://www.vscpa.com/" target="_blank" rel="noopener noreferrer">
                     <img src= { Vscpa } alt="Virginia Society of Certified Public Accountants Member Badge" />
                 </Link>
                 <Link to="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">
                     <img src= { Aicpa } alt="American Institute of Certified Public Accountants Member Badge" />
+                </Link>
                 <Link to="https://nabainc.org/" target="_blank" rel="noopener noreferrer">
                     <img src= { Naba } alt="National Association of Black Accountants Member Badge" />
                 </Link>
-                    </Link>
                 <Link to="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">
                     <img src= { Swam } alt="Small, Women-owned, and Minority-owned Business (SWaM) Member Badge" />
                 </Link>
