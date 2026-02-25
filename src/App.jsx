@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NotFound from './views/404';
 import ScrollToTop from './components/ReusableComponents/ScrollToTopComponent/ScrollToTop';
 import Navigation from './components/Navigation';
 import Home from './views/Home';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
