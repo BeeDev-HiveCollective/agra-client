@@ -30,10 +30,10 @@ function Footer() {
                         </Link>
                         <Link to="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">
                             <img src= { Aicpa } alt="American Institute of Certified Public Accountants Member Badge" />
+                        </Link>
                         <Link to="https://nabainc.org/" target="_blank" rel="noopener noreferrer">
                             <img src= { Naba } alt="National Association of Black Accountants Member Badge" />
                         </Link>
-                            </Link>
                         <Link to="https://sbsd.virginia.gov/" target="_blank" rel="noopener noreferrer">
                             <img src= { Swam } alt="Small, Women-owned, and Minority-owned Business (SWaM) Member Badge" />
                         </Link>
