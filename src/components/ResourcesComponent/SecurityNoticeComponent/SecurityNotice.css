@@ -19,6 +19,11 @@
     color: var(--text);
     padding: 2rem;
 }
+.security_phone {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 
 .security-icon {
     height: 10rem;
