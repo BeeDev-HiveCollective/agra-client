@@ -30,6 +30,9 @@ export default function ContactInformation() {
                     </div>
                     <div className="section">
                         <h4>Office Hours</h4>
+                        <h5 className="info">Monday - Thursday: 9:00 am - 5:00 pm</h5>
+                        <h5 className="info">Friday: By Appointment</h5>
+                        <h5 className="info"> Saturday & Sunday: Closed</h5>
                     </div>
                 </div>
                 <div className="img">
