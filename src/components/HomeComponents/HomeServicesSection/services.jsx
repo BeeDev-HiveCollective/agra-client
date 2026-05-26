@@ -13,7 +13,7 @@ export default function ServicesSection() {
                 <div className="left">
                     <div className="service-box service-bar">
                         <h4 className="service-title">Individual Tax Preparation</h4>
-                        <h5 className="service-description">Expert preparation of personal tax returns with accuracy and attention to detail.</h5>
+                        <h5 className="service-description">Comprehensive preparation of personal tax returns with accuracy and attention to detail.</h5>
                     </div>
                     <div className="service-box service-background">
                         <h4 className="service-title">Business Tax Returns</h4>
@@ -21,7 +21,7 @@ export default function ServicesSection() {
                     </div>
                     <div className="service-box service-bar">
                         <h4 className="service-title">Financial Statements</h4>
-                        <h5 className="service-description">Expert preparation and review of comprehensive financial statements.</h5>
+                        <h5 className="service-description">Accurate preparation and review of comprehensive financial statements.</h5>
                     </div>            
                 </div>
                 <div className="right">
@@ -35,7 +35,7 @@ export default function ServicesSection() {
                     </div>
                     <div className="service-box service-background">
                         <h4 className="service-title">Consultations</h4>
-                        <h5 className="service-description">Expert guidance on tax planning, business structure, and strategy.</h5>
+                        <h5 className="service-description">Trusted guidance on tax planning, business structure, and strategy.</h5>
                     </div>
                 </div>                
             </div>
