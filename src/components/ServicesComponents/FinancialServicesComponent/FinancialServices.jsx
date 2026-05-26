@@ -5,7 +5,6 @@ function FinancialServices () {
     return (
         <div className="financial-services">
             <h3 className="financial-services-header">Financial Services</h3>
-            <h5 className="financial-services-content">Accurate financial reporting and ongoing accounting serices.</h5>
             <Divider />
             <div className="services">
                 <div className="financial-statements-services">
