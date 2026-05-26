@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function CertificationsSection() {
     return (
         <div className="certifications">
-            <div className="header">
+            <div className="certifications-header">
                 <h2 className="member_badges_header">Professional Affiliations</h2>
                 <h5 className="member_badges_content">Click the images below to learn more about our affiliations</h5>
             </div>

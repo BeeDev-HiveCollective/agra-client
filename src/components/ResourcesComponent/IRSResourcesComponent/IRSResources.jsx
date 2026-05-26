@@ -19,6 +19,8 @@ function IRSResources () {
                             </Link>
                         </div>
                     </div>
+                </div>
+                <div className="IRS-resources-right">
                     <div className="refund resource">
                         <div className="left">
                             <h4 className="refund-header header">Where's My Refund?</h4>
@@ -26,30 +28,6 @@ function IRSResources () {
                         </div>
                         <div className="right">
                             <Link to= "https://www.irs.gov/wheres-my-refund" target="_blank" rel="noopener noreferrer">
-                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="IRS-resources-right">
-                    <div className="IRS-forms resource">
-                        <div className="left">
-                            <h4 className="IRS-forms-header header">IRS Forms & Publications</h4>
-                            <h5 className="IRS-forms-content">Download current and prior year tax forms.</h5>
-                        </div>
-                        <div className="right">
-                            <Link to= "https://www.irs.gov/forms-pubs/prior-year" target="_blank" rel="noopener noreferrer">
-                                <img className="link-icon" src={ LinkImage } alt="link-icon" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="IRS-free-file resource">
-                        <div className="left">
-                            <h4 className="IRS-free-file-header header">IRS Free File</h4>
-                            <h5 className="IRS-free-file-content">Free tax filing options for eligible tax payers.</h5>
-                        </div>
-                        <div className="right">
-                            <Link to= "https://www.irs.gov/e-file-do-your-taxes-for-free" target="_blank" rel="noopener noreferrer">
                                 <img className="link-icon" src={ LinkImage } alt="link-icon" />
                             </Link>
                         </div>

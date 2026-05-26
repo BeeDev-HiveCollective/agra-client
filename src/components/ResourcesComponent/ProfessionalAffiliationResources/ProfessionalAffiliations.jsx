@@ -11,7 +11,7 @@ function ProfessionalAffiliations () {
                     <div className="aicpa resource">
                         <div className="left">
                             <h4 className="aicpa-header header">American Institute of CPAs</h4>
-                            <h5 className="aicpa-content">National Organization for CPAs.</h5>
+                            <h5 className="aicpa-content">AICPA & CIMA</h5>
                         </div>
                         <div className="right">
                             <Link to="https://www.aicpa-cima.com/" target="_blank" rel="noopener noreferrer">
