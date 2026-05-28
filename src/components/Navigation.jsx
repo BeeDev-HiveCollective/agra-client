@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom';
+import Logo from '../assets/AG_Reese_Logo.png';
+import '../App.css';
 
 function Navigation() {
   return (
     <nav className="navigation">
       <div className="nav-brand">
-        <Link to="/">A.G. Reese & Associates, P.C.</Link>
-        <h5 className='slogan'>Integrity at its best</h5>
+        <Link to="/">
+          <div className='nav-brand-left'>
+            <img src={Logo} alt='A.G. Reese & Associates, P.C. Logo' className='navigation-logo'/>
+          </div>
+          <div className='nav-brand-right'>
+            A.G. Reese & Associates, P.C.
+            <h5 className='slogan'>Integrity at its best</h5>
+          </div>
+        </Link>
       </div>
       <div className="nav-links">
         <Link to="/">Home</Link>

@@ -170,6 +170,25 @@ a {
   }
 }
 
+.nav-brand a {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-brand-left {
+  padding: 0.25rem 1rem 0 0;
+}
+
+.nav-brand-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
 @media (max-width: 768px) {
   .navigation {
     flex-direction: column;
@@ -220,6 +239,24 @@ a {
     justify-content: space-between;
     
     .footer-left {
+      .name a {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .name-left {
+        padding: 0 0 0 2rem;
+      }
+
+      .name-right {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-logo {
+        height: 4rem;
+        width: 4rem;
+      }
       .badges {
         padding: 2rem 0 0 0;
       }
