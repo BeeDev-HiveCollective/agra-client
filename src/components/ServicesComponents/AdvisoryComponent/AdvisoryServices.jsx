@@ -20,6 +20,9 @@ function AdvisoryServices () {
                         <li>Technology consulting</li>
                     </ul>
                 </div>
+                <p className="advisory-notary">
+                    A. G. Reese & Associates, P.C. is also offers notary public services for your convenience.
+                </p>
             </div>
         </div>
     )
