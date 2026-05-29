@@ -1,5 +1,6 @@
 
 import Divider from "../ReusableComponents/DividerComponent/Divider";
+import Building from "../../assets/AG_Reese_Building.png";
 
 
 export default function ContactInformation() {
@@ -36,7 +37,7 @@ export default function ContactInformation() {
                     </div>
                 </div>
                 <div className="img">
-                    <img className="office-photo" src="" alt="" />
+                    <img className="office-photo" src={Building} alt="Office Location Image" />
                 </div>
             </div>
             <Divider />

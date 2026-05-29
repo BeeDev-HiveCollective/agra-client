@@ -21,7 +21,7 @@ function AdvisoryServices () {
                     </ul>
                 </div>
                 <p className="advisory-notary">
-                    A. G. Reese & Associates, P.C. is also offers notary public services for your convenience.
+                    A. G. Reese & Associates, P.C. also offers notary public services for your convenience.
                 </p>
             </div>
         </div>
