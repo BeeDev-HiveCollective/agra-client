@@ -1,112 +1,59 @@
-import React, { useEffect, useState } from 'react';
+import Divider from '../../ReusableComponents/DividerComponent/Divider';
 import "./OurTeam.css";
-import Divider from "../../ReusableComponents/DividerComponent/Divider";
 
-function OurTeam () {
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [slidesToShow, setSlidesToShow] = useState(4);
-
+function OurTeam() {
+    
     const teamMembers = [
-        { name: 'Lisa Jones, CPA', title: 'Owner & Shareholder' },
-        { name: 'Kimberly R. Baine, CPA', title: 'Owner & Shareholder' },
+        { name: 'Lisa Jones', title: 'Owner & Shareholder' },
+        { name: 'Kimberly R. Baine', title: 'Owner & Shareholder' },
         { name: 'Thomas Reese', title: 'Accountant' },
-        { name: 'Deborah Coles', title: "Accounting Clerk" },
+        { name: 'Deborah Coles', title: 'Accounting Clerk' },
         { name: 'Chiquita Bracey-Tabb', title: 'Associate' },
         { name: 'Raymond E. Payne, Jr.', title: 'Accountant' },
         { name: 'A. LaFran Walker', title: 'Associate' }
     ];
 
-    // Number of slides to show at once (adjust based on screen size)
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 480) {
-                setSlidesToShow(1);
-            } else if (window.innerWidth <= 768) {
-                setSlidesToShow(2);
-            } else {
-                setSlidesToShow(4);
-            }
-            setCurrentIndex(0);
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    const maxIndex = Math.max(0, teamMembers.length - slidesToShow);
-
-    const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
-    };
-
-    const handleNext = () => {
-        setCurrentIndex((prev) => (prev === maxIndex ? 0 : prev + 1));
-    }
-
     return (
-
-        <div>
+        <div className="our-team">
             <h3 className="our-team-header">Meet Our Team</h3>
+
+            {/* FOUNDER SECTION */}
             <div className="founder">
-                <div className="founder-content">
-                    <h4 className="founder-header">Alan G. Reese, CPA</h4>
-                    <h5 className="founder-content">Alan G. Reese, the Founder and previous President of A.G. Reese & Associates, P.C., established the firm in 1983. He is a graduate of Virginia State University with a Bachelor of Science Degree in Accounting, and is a former member of the International Accounting Firm of Price Waterhouse & Co.</h5>
+                <div className="founder-text">
+                    <h4 className="founder-name">Alan G. Reese, CPA</h4>
+                    <h5 className="founder-title">Founder & Former President</h5>
+                    <p className="founder-bio">
+                        Alan G. Reese, the Founder and previous President of A.G. Reese & Associates, P.C.,
+                        established the firm in 1983. He is a graduate of Virginia State University with a
+                        Bachelor of Science Degree in Accounting, and is a former member of the International
+                        Accounting Firm of Price Waterhouse & Co.
+                    </p>
+                    <p className="founder-signature">Alan G. Reese</p>
                 </div>
-                <div className="founder-image">
-                    <div className="placeholder"></div>
+                <div className="founder-badge">
+                    <div className="founder-badge-content">
+                        <span className="founder-badge-est">Est.</span>
+                        <span className="founder-badge-year">1983</span>
+                        <span className="founder-badge-firm">A.G. Reese & Associates, P.C.</span>
+                    </div>
                 </div>
             </div>
-            <div className='team-carousel-section'>
-                <div className='team-carousel-container'>
-                    <button
-                        className='carousel-arrow carousel-arrow-left'
-                        onClick={ handlePrev }
-                        aria-label='Previous team member'>
-                        ‹
-                    </button>
-                    <div className='team-carousel-wrapper'>
-                        <div 
-                            className='team-carousel-track'
-                            style={{
-                                transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`,
-                        }}>
-                            { teamMembers.map((member, index) => (
-                                <div key={ index } className='team-member-slide'>
-                                    <div className='team-member-card'>
-                                        <div className='team-member-info'>
-                                            <h3 className='team-member-name'>{member.name}</h3>
-                                            <h5 className='team-member-title'>{member.title}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
+
+            {/* TEAM GRID */}
+            <div className="team-grid-section">
+                <div className="team-grid">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="team-grid-card">
+                            <h3 className="grid-member-name">{member.name}</h3>
+                            <p className="grid-member-title">{member.title}</p>
                         </div>
-                    </div>
-
-                    <button
-                        className='carousel-arrow carousel-arrow-right'
-                        onClick={ handleNext }
-                        aria-label='Next team member'
-                    >
-                        ›
-                    </button>
-                </div>
-
-                <div className='carousel-dots'>
-                    {Array.from({ length: maxIndex + 1 }).map((_, index ) => (
-                        <button
-                            key={ index }
-                            className= { `carousel-dot ${index === currentIndex ? 'active' : ''}`}
-                            onClick={ () => setCurrentIndex(index) }
-                            aria-label={ `Go to slide ${index + 1}` }
-                        />
                     ))}
                 </div>
             </div>
+
             <Divider />
         </div>
-    )
+    );
 }
 
 export default OurTeam;
