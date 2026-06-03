@@ -65,7 +65,9 @@ function Footer() {
             </div>
             <div className="bottom">
                 <div className="site-links">
-                    <h5>Terms & Conditions | Privacy Policy | Unsubscribe</h5>
+                    <h5>
+                        <a id="footer-link" href="/terms">Terms & Conditions</a> | <a id="footer-link" href="/privacy">Privacy Policy</a> | <a id="footer-link" href="/unsubscribe">Unsubscribe</a>
+                    </h5>
                 </div>
                 <div className="created-by-info">
                     <h5>Website created by <a id="footer-link" href="https://www.beedev-services.com/" target="_blank" rel="noopener noreferrer">BeeDev Services</a></h5>
