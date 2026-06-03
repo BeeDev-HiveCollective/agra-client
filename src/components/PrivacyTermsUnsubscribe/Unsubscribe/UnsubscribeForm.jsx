@@ -22,6 +22,8 @@ export default function UnsubscribeForm() {
 
     const isFormValid = useUnsubFormValidation({ userName, subject, contact, phone });
 
+    console.log("window location", window.location.origin)
+
     useEffect(() => {
         if (subject) {
             const subjectLower = subject.toLowerCase()
@@ -34,7 +36,7 @@ export default function UnsubscribeForm() {
                 baseMessage = `The following phone number has been added to our unsubscribe list:\n\n- Phone: ${phone}`
             }
             // Final message with instructions
-        const messageBody = `${baseMessage}\n\nIf you wish to remove your ${subjectLower} from this list, please email us at ${SupportEmail} or fill out our contact form at ${window.location.origin}/contact.\n\nThank you for reaching out.`;
+        const messageBody = `${baseMessage}\n\nIf you wish to remove your ${subjectLower} from this list, please email us at ${SupportEmail} or fill out our contact form at ${window.location.origin}/unsubscribe.\n\nThank you for reaching out.`;
 
         setMessage(messageBody)
         }
