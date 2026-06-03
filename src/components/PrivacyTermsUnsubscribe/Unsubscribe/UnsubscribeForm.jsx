@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 import './unsub.css'
 
-import useUnsubFormValidation from "../UnsubscribeHooks/useUnsubFormValidation"
-import useUnsubMailSubmission from '../UnsubscribeHooks/useUnsubMailSubmission'
+import useUnsubFormValidation from '../../../CustomHooks/useUnsubFormValidation'
+import useUnsubMailSubmission from '../../../CustomHooks/useUnsubMailSubmission'
 
 export default function UnsubscribeForm() {
 
