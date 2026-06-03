@@ -6,7 +6,7 @@ function ServicesHeader () {
             <div className="services-header-content">
                 <h2 className="services-header-title">Services</h2>
                 <h4 className="services-header-subtitle">
-                    We offer a full range of accounting, tax, and audit services designed to support your financial success year-round.
+                    We offer a full range of accounting, tax, audit and consulting services to support your financial success year-round.
                 </h4>
             </div>
         </div>

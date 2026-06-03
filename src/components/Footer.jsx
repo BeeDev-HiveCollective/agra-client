@@ -2,6 +2,7 @@ import Vscpa from "../assets/VSCPA_badge_white.png";
 import Aicpa from "../assets/AICPA_badge_white.png";
 import Swam from "../assets/SWaM_badge_white.png";
 import Naba from "../assets/NABA_badge_white.png";
+import Logo from "../assets/AG_Reese_Logo.png";
 
 
 import { Link } from "react-router-dom";
@@ -14,14 +15,20 @@ function Footer() {
     const Address01 = import.meta.env.VITE_ADDRESS_LINE1;
     const Address02 = import.meta.env.VITE_ADDRESS_LINE2;
     const Address03 = import.meta.env.VITE_ADDRESS_LINE3;
+
     return (
         <footer className="footer">
             <div className="top">
                 <div className="footer-left">
                     <div className="name">
                         <Link to="/">
-                            <h3>A.G. Reese & Associates, P.C.</h3>
-                            <h5>Integrity at its best</h5>
+                            <div className="name-left">
+                                <img src={Logo} alt="A.G. Reese & Associates, P.C. Logo" className="footer-logo"/>
+                            </div>
+                            <div className="name-right">
+                                <h3>A.G. Reese & Associates, P.C.</h3>
+                                <h5>Integrity at its best</h5>
+                            </div>
                         </Link>
                     </div>
                     <div className="badges">

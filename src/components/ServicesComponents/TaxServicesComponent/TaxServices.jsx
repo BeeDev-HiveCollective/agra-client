@@ -14,11 +14,10 @@ function TaxServices () {
                     <div className="individual-services-bullets">
                         <ul className="individual-services-bullets-left">
                             <li>Individual tax returns (Form 1040)</li>
-                            <li>Business tax returns (1120, 11205, 1065)</li>
-                            <li>State and local tax returns</li>
+                            <li>Multi-state and local tax returns</li>
+                            <li>Tax planning and strategy</li>
                         </ul>
                         <ul className="individual-services-bullets-right">
-                            <li>Tax planning and strategy</li>
                             <li>Amended returns</li>
                             <li>IRS representation</li>
                         </ul>
@@ -26,17 +25,16 @@ function TaxServices () {
                 </div>
                 <div className="business-services">
                     <h4 className="business-services-header">Business Tax Returns</h4>
-                    <h5 className="business-services-content">Complete tax services for corporations, partnerships, LLCs, and small businesses. We handle all aspects of business tax preparation, planning and filing to help maximize your tax liability.</h5>
+                    <h5 className="business-services-content">Complete tax services for corporations, partnerships, and small businesses.</h5>
                     <div className="business-services-bullets">
                         <ul className="individual-services-bullets-left">
-                            <li>Corporate tax planning</li>
-                            <li>Partnerships and LLC taxation</li>
+                            <li>Business tax planning</li>
                             <li>Quarterly estimated tax preparation</li>
+                            <li>Business tax returns (Forms 1120, 1120S, 1065, 1041, 990)</li>
                         </ul>
                         <ul className="individual-services-bullets-right">
-                            <li>Sales tax compliance</li>
-                            <li>Payroll tax services</li>
-                            <li>Tax credit identification</li>
+                            <li>Non-profit & estates/trust</li>
+                            <li>Partnerships and LLC taxation</li>
                         </ul>
                     </div>
                 </div>

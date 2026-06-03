@@ -224,3 +224,444 @@
 }
 
 /* TEAM CAROUSEL END */
+
+
+* ===========================
+   OUR TEAM SECTION
+=========================== */
+
+.our-team {
+    padding: 2rem 0;
+}
+
+.our-team-header {
+    color: var(--primary);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    padding: 0 4rem;
+}
+
+/* ===========================
+   FOUNDER SECTION
+=========================== */
+
+.founder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem 4rem 3rem 4rem;
+}
+
+.founder-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.founder-name {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.founder-title {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.founder-bio {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0.5rem 0;
+}
+
+.founder-signature {
+    font-family: 'Dancing Script', 'Brush Script MT', cursive;
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+/* EST. BADGE */
+.founder-badge {
+    flex-shrink: 0;
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-badge-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.founder-badge-est {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.founder-badge-year {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+.founder-badge-firm {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    max-width: 10rem;
+}
+
+/* ===========================
+   OPTION A: MONOGRAM CAROUSEL
+=========================== */
+
+.team-carousel-section {
+    padding: 2rem 0;
+    background-color: var(--background);
+}
+
+.team-carousel-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-carousel-wrapper {
+    overflow: hidden;
+    flex: 1;
+}
+
+.team-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.team-member-slide {
+    min-width: 25%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.team-member-card {
+    background-color: var(--service-background);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* MONOGRAM CIRCLE */
+.team-member-monogram {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monogram-initials {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.1rem;
+}
+
+.team-member-info {
+    padding: 1rem 0.75rem;
+}
+
+.team-member-name {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.team-member-credentials {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.team-member-title {
+    color: var(--text);
+    font-size: 0.875rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* CAROUSEL ARROWS */
+.carousel-arrow {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--secondary);
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+    transform: scale(0.95);
+}
+
+/* CAROUSEL DOTS */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.carousel-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 0.125rem solid var(--primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    background-color: rgba(45, 80, 22, 0.3);
+    transform: scale(1.2);
+}
+
+.carousel-dot.active {
+    background-color: var(--primary);
+}
+
+/* ===========================
+   OPTION B: CLEAN GRID
+=========================== */
+
+.team-grid-section {
+    padding: 2rem 4rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.team-grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border-left: 0.4rem solid var(--primary);
+    background-color: var(--service-background);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-grid-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.grid-member-name {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.grid-member-credentials {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.grid-member-title {
+    color: var(--text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE STYLES
+=========================== */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+
+    .our-team-header {
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* Founder */
+    .founder {
+        flex-direction: column;
+        padding: 1rem 2rem 2rem 2rem;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .founder-badge {
+        width: 12rem;
+        height: 12rem;
+        align-self: center;
+    }
+
+    .founder-badge-year {
+        font-size: 2.75rem;
+    }
+
+    /* Option A: Carousel */
+    .team-carousel-container {
+        padding: 0 2rem;
+    }
+
+    .team-member-slide {
+        min-width: 33.333%;
+    }
+
+    .monogram-initials {
+        font-size: 2.25rem;
+    }
+
+    /* Option B: Grid */
+    .team-grid-section {
+        padding: 2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+
+    .our-team-header {
+        padding: 0 1rem;
+        font-size: 1.25rem;
+    }
+
+    /* Founder */
+    .founder {
+        padding: 1rem 1rem 2rem 1rem;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .founder-name {
+        font-size: 1.25rem;
+    }
+
+    .founder-bio {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .founder-badge {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .founder-badge-year {
+        font-size: 2.25rem;
+    }
+
+    .founder-badge-firm {
+        font-size: 0.6rem;
+    }
+
+    /* Option A: Carousel */
+    .team-carousel-container {
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+
+    .team-member-slide {
+        min-width: 50%;
+    }
+
+    .carousel-arrow {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .monogram-initials {
+        font-size: 2rem;
+    }
+
+    .team-member-name {
+        font-size: 0.875rem;
+    }
+
+    /* Option B: Grid */
+    .team-grid-section {
+        padding: 1rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .team-grid-card {
+        padding: 1rem;
+    }
+
+    .grid-member-name {
+        font-size: 0.9rem;
+    }
+
+    .grid-member-title {
+        font-size: 0.8rem;
+    }
+}

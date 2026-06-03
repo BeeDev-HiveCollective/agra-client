@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./OurTeam.css";
 import Divider from "../../ReusableComponents/DividerComponent/Divider";
-import Badge from "../../../assets/AG_favicon.png";
 
 function OurTeam () {
 
@@ -9,13 +8,13 @@ function OurTeam () {
     const [slidesToShow, setSlidesToShow] = useState(4);
 
     const teamMembers = [
-        { name: 'Lisa Jones, CPA', image: Badge, title: 'Owner & Shareholder' },
-        { name: 'Kimberly R. Baine, CPA', image: Badge, title: 'Owner & Shareholder' },
-        { name: 'Thomas Reese', image: Badge, title: 'Accountant' },
-        { name: 'Deborah Coles', image: Badge, title: "Accounting Clerk" },
-        { name: 'Chiquita Bracey-Tabb', image: Badge, title: 'Associate' },
-        { name: 'Raymond E. Payne, Jr.', image: Badge, title: 'Accountant' },
-        { name: 'A. LaFran Walker', image: Badge, title: 'Associate' }
+        { name: 'Lisa Jones, CPA', title: 'Owner & Shareholder' },
+        { name: 'Kimberly R. Baine, CPA', title: 'Owner & Shareholder' },
+        { name: 'Thomas Reese', title: 'Accountant' },
+        { name: 'Deborah Coles', title: "Accounting Clerk" },
+        { name: 'Chiquita Bracey-Tabb', title: 'Associate' },
+        { name: 'Raymond E. Payne, Jr.', title: 'Accountant' },
+        { name: 'A. LaFran Walker', title: 'Associate' }
     ];
 
     // Number of slides to show at once (adjust based on screen size)
@@ -46,6 +45,7 @@ function OurTeam () {
     }
 
     return (
+
         <div>
             <h3 className="our-team-header">Meet Our Team</h3>
             <div className="founder">
@@ -74,9 +74,6 @@ function OurTeam () {
                             { teamMembers.map((member, index) => (
                                 <div key={ index } className='team-member-slide'>
                                     <div className='team-member-card'>
-                                        <div className='team-member-image'>
-                                            <img src={member.image} alt={member.name} />
-                                        </div>
                                         <div className='team-member-info'>
                                             <h3 className='team-member-name'>{member.name}</h3>
                                             <h5 className='team-member-title'>{member.title}</h5>
