@@ -55,8 +55,8 @@ function Footer() {
                         <h5><a id="footer-link" href="/contact">Contact Us</a></h5>
                     </div>
                     <div className="office-info">
-                        <h3><address id="office-info-header">Office Info</address></h3>
-                        <h5><address>{ Address01 }</address></h5>
+                        <h3>Office Info</h3>
+                        <h5>{ Address01 }</h5>
                         <h5>{ Address02 } { Address03 }</h5>
                         <h5>Phone: <a href={ PhoneLink }>{ PhoneDisplay }</a></h5>
                         <h5>Email: <a href={`mailto:${ EmailLink }?subject=Request%20For%20Tax%20Services&body=Hello,%0A%0AI%20would%20like%20to%20inquire%20about...`}>{ EmailLink }</a></h5>
