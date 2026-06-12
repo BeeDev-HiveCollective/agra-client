@@ -1,8 +1,9 @@
-import Vscpa from "../assets/VSCPA_badge_white.png";
-import Aicpa from "../assets/AICPA_badge_white.png";
-import Swam from "../assets/SWaM_badge_white.png";
-import Naba from "../assets/NABA_badge_white.png";
-import Logo from "../assets/AG_Reese_Logo.png";
+import Vscpa from "../../../assets/VSCPA_badge_white.png";
+import Aicpa from "../../../assets/AICPA_badge_white.png";
+import Swam from "../../../assets/SWaM_badge_white.png";
+import Naba from "../../../assets/NABA_badge_white.png";
+import Logo from "../../../assets/AG_Reese_Logo.png";
+import './Footer.css';
 
 
 import { Link } from "react-router-dom";
