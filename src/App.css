@@ -68,9 +68,7 @@ main {
   max-width: 1200px;
 }
 
-/*                        */
 /* STANDARDIZE FONT SIZES */
-/*                        */
 h1, h2, h3, h4, h5, h6, p, a, li {
   transition: all 300ms ease;
   color: var(--text);
@@ -93,6 +91,17 @@ a {
   &:hover {
     color: var(--secondary);
   }
+}
+
+/* BUTTONS */
+.primary-button {
+  background-color: var(--primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.secondary-button {
+  background-color: var(--dark-gray);
+  font-family: 'Inter', sans-serif;
 }
 
 /* SCREEN SIZES ABOVE 500 */
@@ -118,9 +127,7 @@ a {
   li { font-size: 1.1rem; }
 }
 
-/*                      */
 /* VISABILITY UTILITIES */
-/*                      */
 @media only screen and (min-width: 768px) {
   .mobile_only {
     display: none !important; 
@@ -133,9 +140,7 @@ a {
   }
 }
 
-/*                      */
-/*   SCROLL BAR STYLE   */
-/*                      */
+/* SCROLL BAR STYLE */
 ::-webkit-scrollbar {
   width: 6px;
   background-color: var(--light-gray);
@@ -149,14 +154,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
-}
-
-.primary-button {
-  background-color: var(--primary);
-  font-family: 'Inter', sans-serif;
-}
-
-.secondary-button {
-  background-color: var(--dark-gray);
-  font-family: 'Inter', sans-serif;
 }
