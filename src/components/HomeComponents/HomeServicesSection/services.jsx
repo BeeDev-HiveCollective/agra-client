@@ -12,7 +12,7 @@ export default function ServicesSection() {
             <div className="service-descriptions">
                 <div className="service-box service-bar">
                     <h4 className="service-title">Individual & Business Tax Preparation</h4>
-                    <h5 className="service-description">Preparation of individual, corporations, partnerships and small business tax returns.</h5>
+                    <h5 className="service-description">Preparation of individuals, corporations, partnerships, estates and trusts, and other small business tax returns.</h5>
                 </div>
                 <div className="service-box service-background">
                     <h4 className="service-title">Financial Statements</h4>
