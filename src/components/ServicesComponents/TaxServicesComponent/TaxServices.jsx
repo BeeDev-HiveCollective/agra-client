@@ -25,16 +25,15 @@ function TaxServices () {
                 </div>
                 <div className="business-services">
                     <h4 className="business-services-header">Business Tax Returns</h4>
-                    <h5 className="business-services-content">Complete tax services for corporations, partnerships, and small businesses.</h5>
+                    <h5 className="business-services-content">Complete tax services for corporations, partnerships, LLCs, and small businesses.</h5>
                     <div className="business-services-bullets">
                         <ul className="individual-services-bullets-left">
                             <li>Business tax planning</li>
-                            <li>Quarterly estimated tax preparation</li>
                             <li>Business tax returns (Forms 1120, 1120S, 1065, 1041, 990)</li>
                         </ul>
                         <ul className="individual-services-bullets-right">
                             <li>Non-profit & estates/trust</li>
-                            <li>Partnerships and LLC taxation</li>
+                            <li>Quarterly estimated tax preparation</li>
                         </ul>
                     </div>
                 </div>

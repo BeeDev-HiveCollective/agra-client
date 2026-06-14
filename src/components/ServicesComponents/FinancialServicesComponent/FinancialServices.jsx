@@ -24,20 +24,19 @@ function FinancialServices () {
                 </div>
                 <div className="audit-services">
                     <h4 className="audit-header">Audits & Attest Services</h4>
-                    <h5 className="audit-content">Professional audit services to ensure compliance and financial accuracy. Our thorough approach gives stakeholders confidence in your financial reporting.</h5>
+                    <h5 className="audit-content">We provide professional audit services designed to ensure financial accuracy, regulatory compliance, and transparency. Our detailed and independent approach helps organizations strengthen internal controls, enhance credibility, and give stakeholders confidence in their financial reporting.</h5>
                     <div className="audit-bullets">
                         <ul className="bullets-left">
-                            <li>Financial statement audits</li>
-                            <li>Agreed-upon procedures</li>
+                            <li>Financial statement audits (for profit and not-for profit business)</li>
                         </ul>
                         <ul className="bullets-right">
-                            <li>Non-profit audits</li>
+                            <li>Agreed-upon procedures</li>
                         </ul>
                     </div>
                 </div>
                 <div className="accounting-services">
                     <h4 className="accounting-header">Bookkeeping & Accounting</h4>
-                    <h5 className="accounting-content">Deliver continuous accounting support to ensure financial records are accurate, organized, and compliant with tax and financial statement standards. From daily transactions to monthly reconciliations, we handle the details so you can focus on your business.</h5>
+                    <h5 className="accounting-content">We deliver continuous accounting support to ensure financial records are accurate, organized, and compliant with tax and financial statement standards. From daily transactions to monthly reconciliations, we handle the details so you can focus on your business.</h5>
                     <div className="accounting-bullets">
                         <ul className="bullets-left">
                             <li>Bank reconciliation</li>
