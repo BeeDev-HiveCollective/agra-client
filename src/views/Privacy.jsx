@@ -4,9 +4,9 @@ import TermsPrivacyUnsubHeader from "../components/PrivacyTermsUnsubscribe/Terms
 export default function Privacy() {
 
   return (
-    <main>
+    <div>
       <TermsPrivacyUnsubHeader page_title="Privacy Policy" />
       <PrivacyPolicy />
-    </main>
+    </div>
   );
 }

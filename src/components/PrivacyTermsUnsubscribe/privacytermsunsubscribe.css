@@ -1,22 +1,28 @@
+/* TERMS / PRIVACY POLICY / UNSUBSCRIBE PAGE HEADERS */
 .termsPrivacyUnsubHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85%;
+
+    h2 {
+        color: var(--primary);
+    }
 }
-/* Privacy Page CSS */
+
+/* PRIVACY PAGE AND TERMS & CONDITIONS CSS */
 .privacy_header, .general, .terms_header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85%;
     margin: 1em 0;
 }
+
 .general {
     align-items: flex-start;
 }
+
 address {
     display: flex;
     flex-direction: column;
@@ -33,14 +39,13 @@ address {
         font-family: sans-serif;
     }
 }
+
 .privacy_content, .terms_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 85%;
     margin: 1em 0;
-
 
     .section {
         display: flex;
@@ -75,14 +80,20 @@ address {
         }
     }
 }
-/* Form CSS */
+
+/* TERMS & CONDITIONS PAGE CSS */
+.terms_subheader {
+    margin: 0.25em 0 1em 0;;
+}
+
+/* UNSUBSCRIBE PAGE CSS */
 .unsub_header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
     margin: 1em 0;
 }
+
 .unsub_header form {
     display: flex;
     flex-direction: column;
@@ -96,6 +107,11 @@ address {
     border: 2px solid var(--light-grey);
     border-radius: 10px;
 }
+
+.unsubscribe-subheading {
+    text-align: center;
+}
+
 form .entry_area {
     position: relative;
     height: 60px;
@@ -105,6 +121,7 @@ form .entry_area {
     max-width: 550px;
     margin: 8px 0;
 }
+
 .entry_area input {
     position: absolute;
     left: 12px;
@@ -120,6 +137,7 @@ form .entry_area {
     transition: all 0.1s ease;
     z-index: 1111;
 }
+
 .entry_area .label_line, form select {
     position: absolute;
     font-size: 1.2rem;
@@ -129,27 +147,31 @@ form .entry_area {
     background-color: var(--white);
     transition: all 0.2s ease;
 }
+
 form select {
     margin-left: 10px;
     border-radius: 10px;
     padding: 8px 8px;
     border: 2px solid var(--dark-gray);
 }
+
 .entry_area input:focus {
     border: 3px solid var(--required);
 }
+
 .form_button_box {
-    /* margin-top: 10px; */
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .form_button_box button {
     background-color: var(--primary);
     padding: 12px 16px;
 }
+
 .form_button_box button:disabled {
     opacity: .45;
     cursor: not-allowed;

@@ -6,9 +6,9 @@ export default function Terms() {
 
 
   return (
-    <main>
+    <div>
       <TermsPrivacyUnsubHeader page_title="Terms & Conditions" />
       <TermsAndConditions />
-    </main>
+    </div>
   );
 }
