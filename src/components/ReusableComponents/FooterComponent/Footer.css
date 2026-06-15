@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--primary);
-  padding: 3rem 3rem 0 3rem;
+  padding: 5rem 3rem 0 3rem;
   
   .top {
     display: flex;
@@ -13,10 +13,6 @@
       .name a {
         display: flex;
         flex-direction: row;
-      }
-
-      .name-left {
-        padding: 0 0 0 2rem;
       }
 
       .name-right {
@@ -66,7 +62,7 @@
   .bottom {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 1rem 0;
+    padding: 3.5rem 0 1.25rem 0;
     
     .site-links {
       display: inline-flex;
@@ -100,7 +96,11 @@
 
 @media (max-width: 768px) {
   .footer {
+    padding: 4rem 2rem 0 2rem;
+
     .badges {
+      display: none;
+
       img {
         height: 1.5rem;
         margin: 0 0.5rem 0 0;
@@ -127,6 +127,10 @@
       width: 100%;
       align-items: flex-end;
       padding: 0;
+    }
+
+    .bottom {
+      padding: 3rem 0 1.25rem 0;
     }
   }
 }
