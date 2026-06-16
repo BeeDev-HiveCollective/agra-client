@@ -1,4 +1,5 @@
 import Divider from '../../ReusableComponents/DividerComponent/Divider';
+// import Badge from '../../../assets/40_years_badge.png';
 import "./OurTeam.css";
 
 function OurTeam() {
@@ -10,7 +11,7 @@ function OurTeam() {
         { name: 'Deborah Coles', title: 'Accounting Clerk' },
         { name: 'Chiquita Bracey-Tabb', title: 'Associate' },
         { name: 'Raymond E. Payne, Jr.', title: 'Accountant' },
-        { name: 'A. LaFran Walker', title: 'Associate' }
+        { name: 'Pamela Lipscombe', title: 'Accountant' }
     ];
 
     return (
@@ -21,22 +22,17 @@ function OurTeam() {
             <div className="founder">
                 <div className="founder-text">
                     <h4 className="founder-name">Alan G. Reese, CPA</h4>
-                    <h5 className="founder-title">Founder & Former President</h5>
+                    <h5 className="founder-title">Founder & Former President (now deceased)</h5>
                     <p className="founder-bio">
                         Alan G. Reese, the Founder and previous President of A.G. Reese & Associates, P.C.,
                         established the firm in 1983. He is a graduate of Virginia State University with a
                         Bachelor of Science Degree in Accounting, and is a former member of the International
                         Accounting Firm of Price Waterhouse & Co.
                     </p>
-                    <p className="founder-signature">Alan G. Reese</p>
                 </div>
-                <div className="founder-badge">
-                    <div className="founder-badge-content">
-                        <span className="founder-badge-est">Est.</span>
-                        <span className="founder-badge-year">1983</span>
-                        <span className="founder-badge-firm">A.G. Reese & Associates, P.C.</span>
-                    </div>
-                </div>
+                {/* <div className='est-badge'>
+                    <img src={Badge} alt='40 Years of Service Badge' />
+                </div> */}
             </div>
 
             {/* TEAM GRID */}
