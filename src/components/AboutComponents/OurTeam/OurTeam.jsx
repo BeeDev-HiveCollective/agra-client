@@ -1,5 +1,5 @@
 import Divider from '../../ReusableComponents/DividerComponent/Divider';
-// import Badge from '../../../assets/40_years_badge.png';
+import Badge from '../../../assets/40_years_badge.png';
 import "./OurTeam.css";
 
 function OurTeam() {
@@ -30,9 +30,9 @@ function OurTeam() {
                         Accounting Firm of Price Waterhouse & Co.
                     </p>
                 </div>
-                {/* <div className='est-badge'>
+                <div className='est-badge'>
                     <img src={Badge} alt='40 Years of Service Badge' />
-                </div> */}
+                </div>
             </div>
 
             {/* TEAM GRID */}
