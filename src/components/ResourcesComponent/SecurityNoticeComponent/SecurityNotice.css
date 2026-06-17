@@ -18,6 +18,14 @@
 .security-notice-content {
     color: var(--text);
     padding: 2rem;
+
+    a {
+        color: var(--primary);
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .security_phone {
     color: var(--text);

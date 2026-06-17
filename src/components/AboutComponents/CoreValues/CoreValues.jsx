@@ -6,7 +6,7 @@ function CoreValues () {
             <h4 className="core-values-header">Our Core Values</h4>
             <div className="core-value">
                 <h5 className="core-value-header">Accuracy & Integrity</h5>
-                <h5 className="core-value-content">We handle your financial matters with meticulous attention to detail and unwavering honesty. Every number matters, and we never cut corners.</h5>
+                <h5 className="core-value-content">We handle your financial matters with the highest level of ethical standards and professional expertise. With meticulous attention to detail and a commitment to integrity, we ensure accuracy, transparency, and trusted financial solutions.</h5>
             </div>
             <div className="core-value">
                 <h5 className="core-value-header">Long-term Relationships</h5>
@@ -14,7 +14,7 @@ function CoreValues () {
             </div>
             <div className="core-value">
                 <h5 className="core-value-header">Community Focus</h5>
-                <h5 className="core-value-content">As a local Richmond firm, we're invested in the success of our neighboors and community. Your success is our success.</h5>
+                <h5 className="core-value-content">As a local Richmond firm located in Historic Jackson Ward, we're invested in the success of our neighboors and community. Your success is our success.</h5>
             </div>
         </div>
     )

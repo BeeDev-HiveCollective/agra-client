@@ -1,5 +1,5 @@
 /* MAIN STYLES PAGE */
-/* This style page holds the root styles, fonts, body, main and navigation styles */
+/* This style page holds the root styles, fonts, body, and main styles */
 /* ALL other styles will be imported into their sub components */
 
 /* IMPORT FONTS HERE */
@@ -68,9 +68,7 @@ main {
   max-width: 1200px;
 }
 
-/*                        */
 /* STANDARDIZE FONT SIZES */
-/*                        */
 h1, h2, h3, h4, h5, h6, p, a, li {
   transition: all 300ms ease;
   color: var(--text);
@@ -93,6 +91,17 @@ a {
   &:hover {
     color: var(--secondary);
   }
+}
+
+/* BUTTONS */
+.primary-button {
+  background-color: var(--primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.secondary-button {
+  background-color: var(--dark-gray);
+  font-family: 'Inter', sans-serif;
 }
 
 /* SCREEN SIZES ABOVE 500 */
@@ -118,248 +127,7 @@ a {
   li { font-size: 1.1rem; }
 }
 
-/*                   */
-/* NAVIGATION STYLES */
-/*                   */
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--primary);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  min-height: 80px;
-}
-
-.slogan { 
-  color: var(--white);
-}
-
-.nav-brand a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-family: "Merriweather",serif;
-  
-  &:hover {
-    color: var(--white);
-  }
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: var(--white);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-  
-  &:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: var(--white);
-  }
-  
-  &.active {
-    background-color: rgba(255,255,255,0.2);
-  }
-}
-
-@media (max-width: 768px) {
-  .navigation {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .nav-brand {
-    text-align: center;
-  }
-  
-  .nav-links {
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .slogan {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .navigation {
-    padding-top: 1.5rem;
-    gap: 0.25rem;
-  }
-}
-/*                       */
-/* END NAVIGATION STYLES */
-/*                       */
-
-/*                   */
-/*   FOOTER STYLES   */
-/*                   */
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary);
-  padding: 3rem 3rem 0 3rem;
-  
-  .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    .footer-left {
-      .badges {
-        padding: 2rem 0 0 0;
-      }
-    }
-
-    .footer-right {
-      display: flex;
-      flex-direction: row;
-
-      .footer-links {
-        h5 {
-          a {
-            font-size: 1rem;
-            color: var(--white);
-
-            &:hover {
-              color: var(--service-background);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .footer-links, .office-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 2rem;
-    font-size: 1rem;
-
-    #office-info-header {
-      font-family: "Merriweather", sans-serif;
-    }
-  }
-  
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0 1rem 0;
-    
-    .site-links {
-      display: inline-flex;
-      justify-content: center;
-    }
-
-    .created-by-info {
-      display: flex;
-      justify-content: center;
-    }
-
-    #footer-link {
-      color: var(--white);
-
-      &:hover {
-        color: var(--service-background);
-      }
-    }
-  }
-  
-  h3, h5, p {
-    color: var(--white);
-  }
-
-  img {
-    height: 2rem;
-    padding: 0;
-    margin: 0 1rem 0 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    .badges {
-      img {
-        height: 1.5rem;
-        margin: 0 0.5rem 0 0;
-      }
-    }
-
-    .top {
-      .footer-left {
-        display: flex;
-        min-width: 47%;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .footer-right {
-        min-width: 50%;
-      }
-    }
-
-    .footer-links {
-      display: none;
-    }
-
-    .office-info {
-      width: 100%;
-      align-items: flex-end;
-      padding: 0;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 2rem 1.5rem 0 1.5rem;
-
-    .top {
-      flex-direction: column;
-    }
-
-    .footer-left {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-
-      .badges {
-        display: none;
-      }
-    }
-
-    .footer-right {
-      width: 100%;
-
-      .office-info {
-        align-items: center;
-        text-align: center;
-        padding-top: 1.25rem;
-      }
-    }
-  }
-}
-/*                       */
-/*   END FOOTER STYLES   */
-/*                       */
-
-/*                      */
 /* VISABILITY UTILITIES */
-/*                      */
 @media only screen and (min-width: 768px) {
   .mobile_only {
     display: none !important; 
@@ -372,9 +140,7 @@ a {
   }
 }
 
-/*                      */
-/*   SCROLL BAR STYLE   */
-/*                      */
+/* SCROLL BAR STYLE */
 ::-webkit-scrollbar {
   width: 6px;
   background-color: var(--light-gray);
@@ -388,14 +154,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
-}
-
-.primary-button {
-  background-color: var(--primary);
-  font-family: 'Inter', sans-serif;
-}
-
-.secondary-button {
-  background-color: var(--dark-gray);
-  font-family: 'Inter', sans-serif;
 }

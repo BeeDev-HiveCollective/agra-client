@@ -12,18 +12,10 @@
 
     .service-descriptions {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 2rem 0;
         width: 100%;
         gap: 1rem;
-
-        .left, .right {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex: 1 1 50%;
-            width: 100%;
-        }
 
         .service-box {
             display: flex;

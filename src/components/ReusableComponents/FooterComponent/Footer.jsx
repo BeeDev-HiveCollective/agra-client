@@ -1,7 +1,9 @@
-import Vscpa from "../assets/VSCPA_badge_white.png";
-import Aicpa from "../assets/AICPA_badge_white.png";
-import Swam from "../assets/SWaM_badge_white.png";
-import Naba from "../assets/NABA_badge_white.png";
+import Vscpa from "../../../assets/VSCPA_badge_white.png";
+import Aicpa from "../../../assets/AICPA_badge_white.png";
+import Swam from "../../../assets/SWaM_badge_white.png";
+import Naba from "../../../assets/NABA_badge_white.png";
+import Logo from "../../../assets/AG_Reese_Logo.png";
+import './Footer.css';
 
 
 import { Link } from "react-router-dom";
@@ -14,14 +16,20 @@ function Footer() {
     const Address01 = import.meta.env.VITE_ADDRESS_LINE1;
     const Address02 = import.meta.env.VITE_ADDRESS_LINE2;
     const Address03 = import.meta.env.VITE_ADDRESS_LINE3;
+
     return (
         <footer className="footer">
             <div className="top">
                 <div className="footer-left">
                     <div className="name">
                         <Link to="/">
-                            <h3>A.G. Reese & Associates, P.C.</h3>
-                            <h5>Integrity at its best</h5>
+                            <div className="name-left">
+                                <img src={Logo} alt="A.G. Reese & Associates, P.C. Logo" className="footer-logo"/>
+                            </div>
+                            <div className="name-right">
+                                <h3>A.G. Reese & Associates, P.C.</h3>
+                                <h5>Integrity at its best</h5>
+                            </div>
                         </Link>
                     </div>
                     <div className="badges">
@@ -48,8 +56,8 @@ function Footer() {
                         <h5><a id="footer-link" href="/contact">Contact Us</a></h5>
                     </div>
                     <div className="office-info">
-                        <h3><address id="office-info-header">Office Info</address></h3>
-                        <h5><address>{ Address01 }</address></h5>
+                        <h3>Office Info</h3>
+                        <h5>{ Address01 }</h5>
                         <h5>{ Address02 } { Address03 }</h5>
                         <h5>Phone: <a href={ PhoneLink }>{ PhoneDisplay }</a></h5>
                         <h5>Email: <a href={`mailto:${ EmailLink }?subject=Request%20For%20Tax%20Services&body=Hello,%0A%0AI%20would%20like%20to%20inquire%20about...`}>{ EmailLink }</a></h5>
@@ -58,7 +66,9 @@ function Footer() {
             </div>
             <div className="bottom">
                 <div className="site-links">
-                    <h5>Terms & Conditions | Privacy Policy | Unsubscribe</h5>
+                    <h5>
+                        <a id="footer-link" href="/terms">Terms & Conditions</a> | <a id="footer-link" href="/privacy">Privacy Policy</a> | <a id="footer-link" href="/unsubscribe">Unsubscribe</a>
+                    </h5>
                 </div>
                 <div className="created-by-info">
                     <h5>Website created by <a id="footer-link" href="https://www.beedev-services.com/" target="_blank" rel="noopener noreferrer">BeeDev Services</a></h5>

@@ -9,10 +9,6 @@ import { Link } from "react-router-dom";
 export default function CertificationsSection() {
     return (
         <div className="certifications">
-            <div className="header">
-                <h2 className="member_badges_header">Professional Affiliations</h2>
-                <h5 className="member_badges_content">Click the images below to learn more about our affiliations</h5>
-            </div>
             <div className="badges">
                 <Link to="https://www.vscpa.com/" target="_blank" rel="noopener noreferrer">
                     <img src= { Vscpa } alt="Virginia Society of Certified Public Accountants Member Badge" />

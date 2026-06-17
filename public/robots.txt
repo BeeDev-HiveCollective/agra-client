@@ -84,4 +84,4 @@ Allow: /assets/
 Allow: /images/
 
 # Sitemap location
-Sitemap: https://valor-33.beedev-services.com/sitemap.xml
+Sitemap: https://agreese.com/sitemap.xml

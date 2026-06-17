@@ -55,8 +55,9 @@
     font-size: .85rem;
 }
 .office-photo {
-    height: 15rem;
+    height: 20rem;
     /* width: 15rem; */
+    margin-top: 4rem;
     background-color: var(--service-background);
 }
 
