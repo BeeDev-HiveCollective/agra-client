@@ -27,7 +27,21 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 1001px) and (max-width: 1185px) {
+
+    .certifications {
+        padding-bottom: 3rem;
+        
+        .badges {
+            img {
+                height: 3rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
 
     .certifications {
         width: 100%;
@@ -45,7 +59,25 @@
 
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+
+    .certifications {
+        width: 100%;
+        padding: 1rem 0 2rem 0;
+
+        .badges {
+            margin: 0;
+            padding: 0;
+
+            img {
+                padding: 1rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
     .certifications {
         padding: 3rem 1rem;
         align-items: center;
