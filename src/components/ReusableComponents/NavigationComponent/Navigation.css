@@ -70,7 +70,34 @@
     width: 4rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1039px) {
+    .navigation {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-brand {
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+.navigation-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+}
+
+@media screen and (max-width: 768px) {
     .navigation {
         flex-direction: column;
         padding: 1rem;
@@ -98,7 +125,7 @@
 
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .navigation {
         padding-top: 1.5rem;
         gap: 0.25rem;
