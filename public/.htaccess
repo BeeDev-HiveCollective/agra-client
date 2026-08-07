@@ -11,19 +11,19 @@
   RewriteBase /
 
   # Redirect www to non-www
-  RewriteCond %{HTTP_HOST} ^www\.hive-11.beedev-services\.com$ [NC]
-  RewriteRule ^ https://hive-11.beedev-services.com%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.agreese\.com$ [NC]
+  RewriteRule ^ https://agreese.com%{REQUEST_URI} [R=301,L]
 
   # Bypass — let /agra through immediately
-  RewriteCond %{HTTP_HOST} ^(www\.)?hive-11.beedev-services\.com$ [NC]
+  RewriteCond %{HTTP_HOST} ^(www\.)?agreese\.com$ [NC]
   RewriteRule ^agra(/.*)?$ /index.html [END]
 
   # MAINTENANCE MODE (uncomment to enable)
-  # RewriteCond %{HTTP_HOST} ^(www\.)?hive-11.beedev-services\.com$ [NC]
+  # RewriteCond %{HTTP_HOST} ^(www\.)?agreese\.com$ [NC]
   # RewriteRule ^ https://maintenance.beedev-services.com/client/agra [R=302,L]
 
   # SPA fallback
-  RewriteCond %{HTTP_HOST} ^(www\.)?hive-11.beedev-services\.com$ [NC]
+  RewriteCond %{HTTP_HOST} ^(www\.)?agreese\.com$ [NC]
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
