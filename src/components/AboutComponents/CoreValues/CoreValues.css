@@ -10,6 +10,7 @@
 
 .core-value {
     padding: 0.5rem 0 0 0;
+    text-align: justify;
 }
 
 @media (max-width: 480px) {
