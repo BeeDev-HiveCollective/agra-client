@@ -5,8 +5,8 @@ import "./OurTeam.css";
 function OurTeam() {
     
     const teamMembers = [
-        { name: 'Lisa Jones', title: 'Owner & Shareholder' },
-        { name: 'Kimberly R. Baine', title: 'Owner & Shareholder' },
+        { name: 'Lisa Jones, CPA', title: 'Owner & Shareholder' },
+        { name: 'Kimberly R. Baine, CPA', title: 'Owner & Shareholder' },
         { name: 'Thomas Reese', title: 'Accountant' },
         { name: 'Deborah Coles', title: 'Accounting Clerk' },
         { name: 'Chiquita Bracey-Tabb', title: 'Associate' },
